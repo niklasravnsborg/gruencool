@@ -4,14 +4,21 @@ import Helmet from 'react-helmet'
 import styled from 'react-emotion'
 import { StaticQuery, graphql } from 'gatsby'
 
+import 'typeface-muli'
+
+import Container from './container'
 import Header from './header'
+import Footer from './footer'
 import './layout.css'
 
 const Content = styled.div`
   ${tw`px-8 py-8 font-sans`};
-  @media(min-width: 600px) {
-    ${tw`px-32`};
-  }
+`
+
+const PushFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `
 
 const Layout = ({ children }) => (
@@ -34,8 +41,15 @@ const Layout = ({ children }) => (
           ]}
           htmlAttributes={{"lang": "de"}}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Content>{children}</Content>
+        <PushFooter>
+          <Header siteTitle={data.site.siteMetadata.title}/>
+          <Content>
+            <Container>
+              {children}
+            </Container>
+          </Content>
+          <Footer/>
+        </PushFooter>
       </>
     )}
   />
