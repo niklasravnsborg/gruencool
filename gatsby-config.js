@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Nachhaltigkeitsfreunde Wilhelmshaven',
+    title: 'Grüncool 2019',
   },
   plugins: [
     'gatsby-plugin-tailwindcss',
