@@ -2,15 +2,15 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 
-import Container from './container'
+import Container from '../Container'
 
 const Header = styled.div`
   ${tw`px-8`};
 `
 const Title = styled.div`
   ${tw`text-grey-darkest py-8 m-0 font-sans text-3xl leading-tight`};
-
 `
+
 const StyledLink = styled(Link)`
   ${tw`no-underline text-inherit`};
 `

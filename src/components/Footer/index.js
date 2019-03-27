@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 
-import Container from './container'
-import plantIcon from '../images/plant-icon.svg'
+import Container from '../Container'
+import plantIcon from '../../images/plant-icon.svg'
 
 const Footer = styled.footer`
   ${tw`font-sans px-8 py-8 text-center text-white`};

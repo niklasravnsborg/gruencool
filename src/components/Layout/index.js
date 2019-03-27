@@ -6,9 +6,9 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import 'typeface-muli'
 
-import Container from './container'
-import Header from './header'
-import Footer from './footer'
+import Container from '../Container'
+import Header from '../Header'
+import Footer from '../Footer'
 import './layout.css'
 
 const Content = styled.div`
