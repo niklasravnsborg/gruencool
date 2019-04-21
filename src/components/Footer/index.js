@@ -18,6 +18,8 @@ export default _ => (
     })}
   >
     <Container>
+      <Link to="/team/">Team</Link><br/>
+      <br/>
       <Link to="/impressum/">Impressum</Link><br/>
       <br/>
       <a href="https://friesland.heldenderheimat.de/" target="_blank">Frieslands Helden der Heimat</a>
