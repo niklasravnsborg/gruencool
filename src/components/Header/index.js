@@ -1,27 +1,27 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styled from '@emotion/styled'
+import { Flex, Box } from '@rebass/emotion'
 
 import Container from '../Container'
+import Wordmark from '../../images/logo/wordmark.svg'
 
-const Header = styled.div`
-  ${tw`px-8`};
-`
-const Title = styled.div`
-  ${tw`text-grey-darkest py-8 m-0 font-sans text-3xl leading-tight`};
-`
-
-const StyledLink = styled(Link)`
-  ${tw`no-underline text-inherit`};
-`
-
-export default ({ siteTitle }) => (
-  <Header>
+export default ({ floating }) => (
+  <Box
+    as="header"
+    py="4"
+    css={{
+      position: floating && 'absolute',
+      width: '100%'
+    }}
+  >
     <Container>
-      <StyledLink to="/">
-        <Title>{siteTitle}</Title>
-        <hr style={{ background: '#00ac22', height: 3, marginBottom: '.5em' }}/>
-      </StyledLink>
+      <Flex mx={-2}>
+        <Box width={3/12} px="2">
+          <Link to="/">
+            <Wordmark width="140"/>
+          </Link>
+        </Box>
+      </Flex>
     </Container>
-  </Header>
+  </Box>
 )

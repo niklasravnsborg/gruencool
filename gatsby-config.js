@@ -1,9 +1,5 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Grüncool 2019',
-  },
   plugins: [
-    'gatsby-plugin-tailwindcss',
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
     {
@@ -16,15 +12,24 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-react-svg`
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Nachhaltigkeitsfreunde Wilhelmshaven',
-        short_name: 'Nachhaltigkeitsfreunde',
+        name: 'Gruencool 2019',
+        short_name: 'Gruencool',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
         display: 'minimal-ui',
-        icon: 'src/images/plant-icon.png'
+        icon: 'src/icon.png'
       },
     },
     'gatsby-plugin-offline',

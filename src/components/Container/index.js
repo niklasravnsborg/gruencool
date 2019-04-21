@@ -1,6 +1,12 @@
-import styled from '@emotion/styled'
+import { Box } from '@rebass/emotion'
 
-export default styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-`
+export default props => (
+  <Box
+    mx="auto"
+    px="3"
+    css={{
+      maxWidth: 800
+    }}
+    {...props}
+  />
+)

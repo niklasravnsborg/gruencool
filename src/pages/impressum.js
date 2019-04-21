@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
+import Container from '../components/Container'
 
 export default _ => (
-  <Layout>
+  <Layout><Container>
     <h1>Impressum</h1>
 
     <p>
@@ -40,5 +41,5 @@ export default _ => (
     <p>
       <Link to="/">← Zurück zur Startseite</Link>
     </p>
-  </Layout>
+  </Container></Layout>
 )
