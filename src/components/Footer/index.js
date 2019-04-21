@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Box } from '@rebass/emotion'
+import { Flex, Box } from '@rebass/emotion'
 
 import Container from '../Container'
 
@@ -9,7 +9,7 @@ export default _ => (
     as="footer"
     py={4}
     px={3}
-    bg="primary"
+    bg="#FF9C96"
     css={theme => ({
       'a': {
         color: 'inherit',
@@ -18,11 +18,11 @@ export default _ => (
     })}
   >
     <Container>
-      <Link to="/team/">Team</Link><br/>
-      <br/>
-      <Link to="/impressum/">Impressum</Link><br/>
-      <br/>
-      <a href="https://friesland.heldenderheimat.de/" target="_blank">Frieslands Helden der Heimat</a>
+      <Flex flexWrap="wrap" justifyContent="space-between" mx="auto" css={{ maxWidth: 500 }}>
+        <Link to="/team/">Team</Link> |
+        <a href="https://friesland.heldenderheimat.de/" target="_blank">Frieslands Helden der Heimat</a> |
+        <Link to="/impressum/">Impressum</Link>
+      </Flex>
     </Container>
   </Box>
 )

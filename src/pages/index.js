@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Flex, Box, Card, Button, Heading, Text } from '@rebass/emotion'
 
 import Layout from '../components/Layout'
+import Container from '../components/Container'
 import EventFeatures from '../components/PageIndex/EventFeatures'
 
 import EdgeLeft from '../images/patterns/edge_left.svg'
@@ -24,7 +25,6 @@ const ThemedSection = ({ primary, accent, bgImg, ...props }) => (
     <Card
       pt="5"
       pb="5"
-      px="3"
       color="white"
       bg="primary"
       css={{
@@ -93,7 +93,10 @@ const BackgroundArtifact = ({ top = null, bottom = null, left = 0, right = 0, fi
       position: 'absolute',
       top, bottom, left, right,
       zIndex: -10,
-      'svg': { fill }
+      'svg': { fill },
+      '@media(min-width: 500px)': {
+        display: 'none'
+      }
     }}
     {...props}
   />
@@ -134,22 +137,27 @@ const render = data => (
       accent="#162135"
       py={192}
       bgImg={eventBackground}
+      backgroundPosition="center"
     >
-      <SectionHeading as="h1">
-        Bewusstsein schaffen,<br/>
-        Umwelt einbeziehen
-      </SectionHeading>
-      <Text as="p" mb="2" color="accent">Gruencool ist das erste Nachhaltigkeits-Event in Wilhelmshaven.</Text>
-      <Button href="https://www.youtube.com/embed/Q3BGmVdjmiw?autoplay=true" target="_blank" as="a" variant="outline">Video ansehen</Button>
+      <Container>
+        <SectionHeading as="h1">
+          Bewusstsein schaffen,<br/>
+          Umwelt einbeziehen
+        </SectionHeading>
+        <Text as="p" mb="2" color="accent">Gruencool ist das erste Nachhaltigkeits-Event in Wilhelmshaven.</Text>
+        <Button href="https://www.youtube.com/embed/Q3BGmVdjmiw?autoplay=true" target="_blank" as="a" variant="outline">Video ansehen</Button>
+      </Container>
     </ThemedSection>
     <ThemedSection
       primary="green"
       accent="#fff03d"
       backgroundImage="linear-gradient(#19acbd, #62b61b)"
     >
-      <SectionHeading>Ein Event für eine nachhaltige Zukunft</SectionHeading>
-      <IndentedText mb="3">Gruencool ist das erste Nachhaltigkeits-Event in Wilhelmshaven.</IndentedText>
-      <EventFeatures/>
+      <Container>
+        <SectionHeading>Ein Event für eine nachhaltige Zukunft</SectionHeading>
+        <IndentedText mb="3">Gruencool ist das erste Nachhaltigkeits-Event in Wilhelmshaven.</IndentedText>
+        <EventFeatures/>
+      </Container>
       <BackgroundArtifact
         top="0"
         fill="#53d0ff4d"
@@ -174,10 +182,12 @@ const render = data => (
       bgImg={foodBackground}
       pb={256}
     >
-      <SectionHeading>Vegane Kost für Alle</SectionHeading>
-      <IndentedText>
-        Für den Mampf ist gesorgt! Natürlich hochwertig hergestellt, natürlich vegan. Unsere Speisekarte füllt sich und wir sind noch auf der Suche nach ambitionierten Partnergastronen aus der Region.
-      </IndentedText>
+      <Container>
+        <SectionHeading>Vegane Kost für Alle</SectionHeading>
+        <IndentedText>
+          Für den Mampf ist gesorgt! Natürlich hochwertig hergestellt, natürlich vegan. Unsere Speisekarte füllt sich und wir sind noch auf der Suche nach ambitionierten Partnergastronen aus der Region.
+        </IndentedText>
+      </Container>
       <BackgroundArtifact
         bottom="-1px"
         fill="#162135"
@@ -189,13 +199,15 @@ const render = data => (
       accent="#FF9D94"
       pb={2}
     >
-      <StyledImageBox mt={-256} mb={4}>
-        <Img fluid={data.team.childImageSharp.fluid} alt="Niklas, Richard, Francesco, Kadija, Sophie"/>
-      </StyledImageBox>
-      <SectionHeading>Starkes Team sucht nach Mitstreitern</SectionHeading>
-      <IndentedText>
-        Das klingt cool und Du willst mithelfen zu organisieren? Kontakte uns, und wir schauen, wie wir Dich einbeziehen.
-      </IndentedText>
+      <Container>
+        <StyledImageBox mt={-256} mb={4}>
+          <Img fluid={data.team.childImageSharp.fluid} alt="Niklas, Richard, Francesco, Kadija, Sophie"/>
+        </StyledImageBox>
+        <SectionHeading>Starkes Team sucht nach Mitstreitern</SectionHeading>
+        <IndentedText>
+          Das klingt cool und Du willst mithelfen zu organisieren? Kontakte uns, und wir schauen, wie wir Dich einbeziehen.
+        </IndentedText>
+      </Container>
     </ThemedSection>
     <Img
       fluid={data.planning.childImageSharp.fluid}
