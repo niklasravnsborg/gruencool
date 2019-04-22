@@ -1,4 +1,5 @@
 {
+  "name": "gruencool",
   "private": true,
   "scripts": {
     "build": "gatsby build",
