@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Flex, Box, Card, Button, Heading, Text } from '@rebass/emotion'
 
 import Layout from '../components/Layout'
+import Nobreak from '../components/Nobreak'
 import Container from '../components/Container'
 import EventFeatures from '../components/PageIndex/EventFeatures'
 
@@ -44,7 +45,7 @@ const ThemedSection = ({ primary, accent, bgImg, ...props }) => (
 const SectionHeading = props => (
   <Heading
     color="accent"
-    mb={2}
+    mb={3}
     fontWeight="900"
     {...props}
   />
@@ -140,11 +141,10 @@ const render = data => (
       backgroundPosition="center"
     >
       <Container>
-        <SectionHeading as="h1">
-          Bewusstsein schaffen,<br/>
-          Umwelt einbeziehen
+        <SectionHeading as="h1" fontSize="5" mb="2">
+          Ein Event für eine <Nobreak>nachhaltige Zukunft</Nobreak>
         </SectionHeading>
-        <Text as="p" mb="2" color="accent">Gruencool ist das erste Nachhaltigkeits-Event in Wilhelmshaven.</Text>
+        <Text as="p" mb="3" color="accent">Das coolste Nachhaltigkeits-Event <Nobreak>der Nordseeküste!</Nobreak></Text>
         <Button href="https://www.youtube.com/embed/Q3BGmVdjmiw?autoplay=true" target="_blank" as="a" variant="outline">Video ansehen</Button>
       </Container>
     </ThemedSection>
@@ -154,8 +154,14 @@ const render = data => (
       backgroundImage="linear-gradient(#19acbd, #62b61b)"
     >
       <Container>
-        <SectionHeading>Ein Event für eine nachhaltige Zukunft</SectionHeading>
-        <IndentedText mb="3">Gruencool ist das erste Nachhaltigkeits-Event in Wilhelmshaven.</IndentedText>
+        <SectionHeading>
+          Bewusstsein schaffen,<br/>
+          Umwelt einbeziehen
+        </SectionHeading>
+        <IndentedText mb="4">
+          Gruencool hat das Ziel Gespräche anzustubsen. Wir stehen für eine <b>lebenswerte Zukunft</b> und möchten Ideen darüber verbreiten, was wir heute für diese tun können!<br/>
+          Deswegen planen wir das grünste Event der Nordseeküste in unser Heimatstadt Wilhelmshaven – mit spannenden Aktionen ist das Event ein Erlebnis für Studenten, Familien, Umweltinteressierte und Menschen die die Welt ein kleines bisschen besser machen wollen.
+        </IndentedText>
         <EventFeatures/>
       </Container>
       <BackgroundArtifact
