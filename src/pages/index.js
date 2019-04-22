@@ -185,7 +185,7 @@ const render = data => (
       <Container>
         <SectionHeading>Vegane Kost für Alle</SectionHeading>
         <IndentedText>
-          Für den Mampf ist gesorgt! Natürlich hochwertig hergestellt, natürlich vegan. Unsere Speisekarte füllt sich und wir sind noch auf der Suche nach ambitionierten Partnergastronen aus der Region.
+          Für den Mampf ist gesorgt! Natürlich hochwertig hergestellt, natürlich vegan. Unsere Speisekarte füllt sich und wir sind noch auf der Suche nach ambitionierten Partnergastromen aus der Region.
         </IndentedText>
       </Container>
       <BackgroundArtifact
