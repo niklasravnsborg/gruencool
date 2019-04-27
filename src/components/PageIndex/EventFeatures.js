@@ -1,6 +1,8 @@
 import React from 'react'
 import { Box, Card, Heading, Text } from '@rebass/emotion'
 
+import Nobreak from '../../components/Nobreak'
+
 import ToolboxIcon from '../../images/icons/toolbox.svg'
 import ProductsIcon from '../../images/icons/products.svg'
 import PeopleIcon from '../../images/icons/people.svg'
@@ -56,39 +58,41 @@ const GridListItem = ({ title, content, icon, ...props }) => (
 export default _ => (
   <GridList>
     <GridListItem
-      icon={<PeopleIcon/>}
-      title="Workshops"
-      content="Nice alternative Alltagsdinge zum Machen und Mitnehmen!"
-    />
-    <GridListItem
       icon={<AboutIcon/>}
       title="Information"
-      content="Multimediales Dressing für deinen Kopfsalat!"
+      content="Multimediales Dressing für Deinen Kopfsalat! Hier kannst Du Wissen tanken und Dich bei Ständen regionaler Organisationen informieren."
+    />
+    <GridListItem
+      icon={<PeopleIcon/>}
+      title="Workshops"
+      content="Nice Alltagsdinge zum Machen und Mitnehmen! Wir zeigen Dir, wie Du selbst Shampoo, Einkaufstasche und Co. herstellst."
     />
     <GridListItem
       icon={<ProductsIcon/>}
       title="Products"
-      content="Hobbybastler aus der Umgebung präsentieren ihre Upcycling-Diamanten! Mit Second-Hand Klamotten bist du wieder in Mode!"
+      content={<>
+        Hobbybastler aus der Umgebung präsentieren ihre Werke. <Nobreak>Ob Skateboards</Nobreak> oder Plastiktaschen – alles wird geupcycled!
+      </>}
     />
     <GridListItem
       icon={<ClothingIcon/>}
       title="Kleidertausch"
-      content="Nice gegen nicer!"
+      content="Bringt Kleidung mit die gut aussieht, Euch aber nicht mehr passt oder gefällt. Mit Second-Hand Klamotten bist du wieder in Mode!"
     />
     <GridListItem
       icon={<AvocadoIcon/>}
       title="Geiles Essen"
-      content="Natürlich selbstgemacht und auch vegan!"
+      content="Wir bringen aufstrebende Zukunfts-Gastronomen der Region für euch an einem Fleck zusammen. Natürlich selbstgemacht und vegan!"
     />
-    <GridListItem
+    {/* <GridListItem
       icon={<ToolboxIcon/>}
       title="Repair-Station"
       content="Wellness für deinen Drahtesel!"
-    />
+    /> */}
     <GridListItem
       icon={<MicrophoneIcon/>}
       title="On the Stage"
-      content="Nachdenken mit Poetry-Slammern, abdancen mit Live-Musik"
+      content="Nachdenken mit Poetry-Slammern, entspannen mit Live-Musik. Nur ein ausgewogenes Bühnenprogramm führt zu einem ganzheitlichen Event."
     />
   </GridList>
 )
