@@ -58,7 +58,7 @@ export default _ => (
     <GridListItem
       icon={<PeopleIcon/>}
       title="Workshops"
-      content="Nice alternative Alltagsdinge zum Machen und mitnehmen!"
+      content="Nice alternative Alltagsdinge zum Machen und Mitnehmen!"
     />
     <GridListItem
       icon={<AboutIcon/>}

@@ -160,7 +160,7 @@ const render = data => (
         </SectionHeading>
         <IndentedText mb="4">
           Gruencool hat das Ziel Gespräche anzustubsen. Wir stehen für eine <b>lebenswerte Zukunft</b> und möchten Ideen darüber verbreiten, was wir heute für diese tun können!<br/>
-          Deswegen planen wir das grünste Event der Nordseeküste in unser Heimatstadt Wilhelmshaven – mit spannenden Aktionen ist das Event ein Erlebnis für Studenten, Familien, Umweltinteressierte und Menschen die die Welt ein kleines bisschen besser machen wollen.
+          Deswegen planen wir das grünste Event der Nordseeküste in unser Heimatstadt Wilhelmshaven – mit spannenden Aktionen ist das Event ein Erlebnis für Studierende, Familien, Umweltinteressierte und Menschen die die Welt ein kleines bisschen besser machen wollen.
         </IndentedText>
         <EventFeatures/>
       </Container>
@@ -211,7 +211,7 @@ const render = data => (
         </StyledImageBox>
         <SectionHeading>Starkes Team sucht nach Mitstreitern</SectionHeading>
         <IndentedText>
-          Das klingt cool und Du willst mithelfen zu organisieren? Kontakte uns, und wir schauen, wie wir Dich einbeziehen.
+          Das klingt cool und Du willst mithelfen zu organisieren? Kontaktiere uns, und wir schauen, wie wir Dich einbeziehen.
         </IndentedText>
       </Container>
     </ThemedSection>
