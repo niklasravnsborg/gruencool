@@ -46,7 +46,6 @@ const SectionHeading = props => (
   <Heading
     color="accent"
     mb={3}
-    fontWeight="900"
     {...props}
   />
 )

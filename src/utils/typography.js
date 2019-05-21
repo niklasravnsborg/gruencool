@@ -1,9 +1,10 @@
 import Typography from 'typography'
 
 export default new Typography({
-  baseFontSize: '20px',
-  headerFontFamily: ['Muli', 'sans-serif'],
-  bodyFontFamily: ['Muli', 'sans-serif'],
+  baseFontSize: '18px',
+  headerFontFamily: ['Montserrat', 'sans-serif'],
+  bodyFontFamily: ['Montserrat', 'sans-serif'],
+  bodyWeight: 300,
   overrideStyles: () => ({
     body: {
       overflowX: 'hidden'
@@ -15,9 +16,6 @@ export default new Typography({
       color: 'inherit',
       textDecoration: 'none',
       transition: 'color 0.4s'
-    },
-    'h1, h2': {
-      fontWeight: '900'
     },
     '@media only screen and (max-width: 479px)': {
       html: {

@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { Box } from '@rebass/emotion'
 import { ThemeProvider } from 'emotion-theming'
 
-import 'typeface-muli'
+import 'typeface-montserrat'
 
 import theme from '../../utils/theme.js'
 import Header from '../Header'
