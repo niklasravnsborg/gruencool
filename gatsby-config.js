@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gruencool 2019',
-        short_name: 'Gruencool',
+        name: 'Grüncool 2019',
+        short_name: 'Grüncool',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',

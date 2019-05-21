@@ -9,14 +9,14 @@ import theme from '../../utils/theme.js'
 import Header from '../Header'
 import Footer from '../Footer'
 
-export default ({ floatingHeader, children, ...props }) => (
+export default ({ floatingHeader, title, desc, children, ...props }) => (
   <ThemeProvider theme={theme}>
     <Box {...props}>
       <Helmet
-        title="Gruencool"
-        meta={[
-          { name: 'description', content: 'Wir sind die Gruencool, eine junge motivierte Truppe aus Wilhelmshaven. Unser Ziel ist es das Nachhaltigkeitsbewusstsein in der Stadt zu stärken.' }
-        ]}
+        defaultTitle="Grüncool – Nachhaltigkeitsevent in Wilhelmshaven"
+        titleTemplate="Grüncool %s"
+        title={title}
+        meta={[{ name: 'description', content: desc }]}
         htmlAttributes={{'lang': 'de'}}
       />
       <Header floating={floatingHeader}/>

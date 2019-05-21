@@ -5,12 +5,13 @@ import Layout from '../components/Layout'
 import Container from '../components/Container'
 
 export default _ => (
-  <Layout><Container>
+  <Layout title="Impressum">
+  <Container>
     <h1>Impressum</h1>
 
     <p>
       <b>Angaben gemäß § 5 TMG</b><br/>
-      Nachhaltigkeitsfreunde<br/>
+      Grüncool<br/>
       Karl-Harms Str. 18<br/>
       26419 Schortens
     </p>
@@ -41,5 +42,6 @@ export default _ => (
     <p>
       <Link to="/">← Zurück zur Startseite</Link>
     </p>
-  </Container></Layout>
+  </Container>
+  </Layout>
 )

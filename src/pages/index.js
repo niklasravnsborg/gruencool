@@ -132,6 +132,7 @@ const render = data => (
       position: 'relative',
       zIndex: 0
     }}
+    desc="Ein Event für eine grüne Zukunft in Wilhelmshaven am 18. August 2019!"
   >
     <ThemedSection
       primary="#ffe51f"
@@ -159,7 +160,7 @@ const render = data => (
           Umwelt einbeziehen
         </SectionHeading>
         <IndentedText mb="4">
-          Gruencool hat das Ziel Gespräche anzustubsen. Wir stehen für eine <b>lebenswerte Zukunft</b> und möchten Ideen darüber verbreiten, was wir heute für diese tun können!<br/>
+          Grüncool hat das Ziel Gespräche anzustubsen. Wir stehen für eine <b>lebenswerte Zukunft</b> und möchten Ideen darüber verbreiten, was wir heute für diese tun können!<br/>
           Deswegen planen wir das grünste Event der Nordseeküste in unser Heimatstadt Wilhelmshaven – mit spannenden Aktionen ist das Event ein Erlebnis für Studierende, Familien, Umweltinteressierte und Menschen die die Welt ein kleines bisschen besser machen wollen.
         </IndentedText>
         <EventFeatures/>
