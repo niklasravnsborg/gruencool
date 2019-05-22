@@ -10,7 +10,12 @@ module.exports = {
       }
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaultQuality: 80
+      }
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {

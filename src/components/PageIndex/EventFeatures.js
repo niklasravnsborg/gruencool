@@ -81,8 +81,8 @@ export default _ => (
     />
     <GridListItem
       icon={<AvocadoIcon/>}
-      title="Geiles Essen"
-      content="Wir bringen aufstrebende Zukunfts-Gastronomen der Region für euch an einem Fleck zusammen. Natürlich selbstgemacht und vegan!"
+      title="Streetfood-Style"
+      content="Keine Sorge: Für den Mampf ist gesorgt! Denn das L‘ Orient präsentiert uns am Tag des Events ein Geschmackserlebnis für welchen allein es sich lohnt vorbei zu schauen. In klassischer Steetfood-Manier werden alle Speisen vor Deinen Augen zubereitet und umweltbewusst serviert. Auf der Karte stehen natürlich auch vegane oder vegetarische Gerichte."
     />
     {/* <GridListItem
       icon={<ToolboxIcon/>}
