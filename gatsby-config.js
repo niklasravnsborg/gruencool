@@ -1,17 +1,17 @@
 module.exports = {
   plugins: [
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images`,
-        name: 'images'
+        name: `images`
       }
     },
-    'gatsby-transformer-sharp',
+    `gatsby-transformer-sharp`,
     {
-      resolve: 'gatsby-plugin-sharp',
+      resolve: `gatsby-plugin-sharp`,
       options: {
         defaultQuality: 80
       }
@@ -28,15 +28,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Grüncool 2019',
-        short_name: 'Grüncool',
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#ffffff',
-        display: 'minimal-ui',
-        icon: 'src/icon.png'
+        name: `Grüncool 2019`,
+        short_name: `Grüncool`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
+        display: `minimal-ui`,
+        icon: `src/icon.png`
       },
     },
-    'gatsby-plugin-offline',
-  ],
+    `gatsby-plugin-remove-serviceworker`
+  ]
 }
