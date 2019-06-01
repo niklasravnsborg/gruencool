@@ -28,8 +28,8 @@ export default _ => (
 
     <p>
       <b>Kontakt</b><br/>
-      Telefon: +49 (0) 167 81 70 43 72<br/>
-      Email: FrancescoHuber@gmx.de
+      Telefon: <a href="tel:+4916781704372">+49 167 81704372</a><br/>
+      Email: <a href="mailto:info@gruen.cool">info@gruen.cool</a>
     </p>
 
     <p>

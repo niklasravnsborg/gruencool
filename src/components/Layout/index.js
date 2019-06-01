@@ -9,7 +9,7 @@ import theme from '../../utils/theme.js'
 import Header from '../Header'
 import Footer from '../Footer'
 
-export default ({ floatingHeader, title, desc, children, ...props }) => (
+export default ({ floatingHeader, footerBg, title, desc, children, ...props }) => (
   <ThemeProvider theme={theme}>
     <Box {...props}>
       <Helmet
@@ -21,7 +21,7 @@ export default ({ floatingHeader, title, desc, children, ...props }) => (
       />
       <Header floating={floatingHeader}/>
       {children}
-      <Footer/>
+      <Footer bg={footerBg}/>
     </Box>
   </ThemeProvider>
 )

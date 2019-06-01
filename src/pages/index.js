@@ -126,6 +126,7 @@ export default _ => {
 const render = data => (
   <Layout
     floatingHeader
+    footerBg="#ff9c96"
     css={{
       position: 'relative',
       zIndex: 0
@@ -218,21 +219,21 @@ const render = data => (
       css={{
         margin: '-1px 0',
         '> div': {
-          backgroundImage: 'linear-gradient(#162135, #FF9C96)'
+          backgroundImage: 'linear-gradient(#162135, #ff9c96)'
         }
       }}
     />
     <ThemedSection
-      primary="#FF9C96"
+      primary="#ff9c96"
       accent="#162135"
     >
       <SectionHeading textAlign="center">Sei live dabei!</SectionHeading>
       <Flex justifyContent="center">
-        <Box as="a" href="https://www.facebook.com/gruencool.event/" target="_blank">
-          <FacebookIcon width="50"/>
-        </Box>
         <Box as="a" href="https://www.instagram.com/gruencoolwhv/" target="_blank">
           <InstagramIcon width="50"/>
+        </Box>
+        <Box as="a" href="https://www.facebook.com/gruencool.event/" target="_blank">
+          <FacebookIcon width="50"/>
         </Box>
       </Flex>
     </ThemedSection>
