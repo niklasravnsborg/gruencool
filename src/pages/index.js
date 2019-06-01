@@ -2,12 +2,13 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { ThemeProvider } from 'emotion-theming'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Flex, Box, Card, Button, Heading, Text, Image } from '@rebass/emotion'
+import { Flex, Box, Card, Button, Heading, Text } from '@rebass/emotion'
 
 import Layout from '../components/Layout'
 import Nobreak from '../components/Nobreak'
 import Container from '../components/Container'
 import EventFeatures from '../components/PageIndex/EventFeatures'
+import NetworkSection from '../components/PageIndex/NetworkSection'
 
 import EdgeLeft from '../images/patterns/edge_left.svg'
 import TriangleRight from '../images/patterns/triangle_right.svg'
@@ -16,12 +17,6 @@ import FacebookIcon from '../images/icons/facebook.svg'
 import InstagramIcon from '../images/icons/instagram.svg'
 
 import eventBackground from '../images/backgrounds/event.jpg'
-
-import exposify from '../images/partners/exposify.png'
-import faehrhaus from '../images/partners/faehrhaus.png'
-import fhdh from '../images/partners/fhdh.png'
-import lorient from '../images/partners/lorient.png'
-import micheltheilen from '../images/partners/micheltheilen.png'
 
 const ThemedSection = ({ primary, accent, text, bgImg, ...props }) => (
   <ThemeProvider theme={{
@@ -104,14 +99,6 @@ const BackgroundArtifact = ({ top = null, bottom = null, left = 0, right = 0, fi
     }}
     {...props}
   />
-)
-
-const PartnerLogo = ({ href, src, alt }) => (
-  <Box width={[1/2, 1/3]} px={[4, null, 5]} py={4}>
-    <a href={href} target="_blank">
-      <Image src={src} alt={alt}/>
-    </a>
-  </Box>
 )
 
 export default _ => {
@@ -207,33 +194,7 @@ const render = data => (
         </IndentedText>
       </Container>
       <Container css={{ maxWidth: 1000 }}>
-        <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
-          <PartnerLogo
-            href="https://lorient.one"
-            src={lorient}
-            alt="L‘ Orient Libanesisches Restaurant"
-          />
-          <PartnerLogo
-            href="http://xn--strandcafe-fhrhaus-wtb.de"
-            src={faehrhaus}
-            alt="Strandcafé Fährhaus"
-          />
-          <PartnerLogo
-            href="https://micheltheilen.com"
-            src={micheltheilen}
-            alt="Michel Theilen Music & Audio"
-          />
-          <PartnerLogo
-            href="https://friesland.heldenderheimat.de"
-            src={fhdh}
-            alt="Frieslands Helden der Heimat"
-          />
-          <PartnerLogo
-            href="https://www.exposify.de"
-            src={exposify}
-            alt="Exposify Immobiliensoftware"
-          />
-        </Flex>
+        <NetworkSection/>
       </Container>
     </ThemedSection>
     <ThemedSection

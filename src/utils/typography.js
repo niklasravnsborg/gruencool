@@ -5,7 +5,7 @@ export default new Typography({
   headerFontFamily: ['Montserrat', 'sans-serif'],
   bodyFontFamily: ['Montserrat', 'sans-serif'],
   bodyWeight: 300,
-  overrideStyles: () => ({
+  overrideStyles: _ => ({
     body: {
       overflowX: 'hidden'
     },
