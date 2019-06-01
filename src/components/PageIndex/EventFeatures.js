@@ -77,12 +77,14 @@ export default _ => (
     <GridListItem
       icon={<ClothingIcon/>}
       title="Kleidertausch"
-      content="Bringt Kleidung mit die gut aussieht, Euch aber nicht mehr passt oder gefällt. Mit Second-Hand Klamotten bist du wieder in Mode!"
+      content="Bringt Kleidung mit, die gut aussieht, Euch aber nicht mehr passt oder gefällt. Mit Second-Hand Klamotten bist du wieder in Mode!"
     />
     <GridListItem
       icon={<AvocadoIcon/>}
       title="Streetfood-Style"
-      content="Keine Sorge: Für den Mampf ist gesorgt! Denn das L‘ Orient präsentiert uns am Tag des Events ein Geschmackserlebnis für welchen allein es sich lohnt vorbei zu schauen. In klassischer Steetfood-Manier werden alle Speisen vor Deinen Augen zubereitet und umweltbewusst serviert. Auf der Karte stehen natürlich auch vegane oder vegetarische Gerichte."
+      content={<>
+        Keine Sorge: Für den Mampf ist gesorgt! Denn das <Nobreak>L‘ Orient</Nobreak> präsentiert uns am Tag des Events ein Geschmackserlebnis, für welches allein es sich lohnt vorbei zu schauen. In klassischer Streetfood-Manier werden alle Speisen vor Deinen Augen zubereitet und umweltbewusst serviert. Auf der Karte stehen natürlich auch vegane oder vegetarische Gerichte.
+      </>}
     />
     {/* <GridListItem
       icon={<ToolboxIcon/>}
@@ -92,7 +94,7 @@ export default _ => (
     <GridListItem
       icon={<MicrophoneIcon/>}
       title="On the Stage"
-      content="Nachdenken mit Poetry-Slammern, entspannen mit Live-Musik. Nur ein ausgewogenes Bühnenprogramm führt zu einem ganzheitlichen Event."
+      content="Nachdenken mit Poetry-Slammern, Entspannen mit Live-Musik. Nur ein ausgewogenes Bühnenprogramm führt zu einem ganzheitlichen Event."
     />
   </GridList>
 )

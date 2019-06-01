@@ -159,7 +159,7 @@ const render = data => (
         </SectionHeading>
         <IndentedText mb="4">
           Grüncool hat das Ziel Gespräche anzustubsen. Wir stehen für eine <b>lebenswerte Zukunft</b> und möchten Ideen darüber verbreiten, was wir heute für diese tun können!<br/>
-          Deswegen planen wir das grünste Event der Nordseeküste in unser Heimatstadt Wilhelmshaven – mit spannenden Aktionen ist das Event ein Erlebnis für Studierende, Familien, Umweltinteressierte und Menschen die die Welt ein kleines bisschen besser machen wollen.
+          Deswegen planen wir das grünste Event der Nordseeküste in unserer Heimatstadt Wilhelmshaven – mit spannenden Aktionen ist das Event ein Erlebnis für Studierende, Familien, Umweltinteressierte und Menschen, die die Welt ein kleines bisschen besser machen wollen.
         </IndentedText>
         <EventFeatures/>
       </Container>
@@ -190,7 +190,7 @@ const render = data => (
       <Container>
         <SectionHeading>Unser Netzwerk <Nobreak>wächst und gedeiht</Nobreak></SectionHeading>
         <IndentedText>
-          Für ein besonderes Event braucht es starke Partner und gute Unterstützung. Wir freuen uns mit diesen engagierten Organisationen etwas auf die Beine stellen zu können. In den nächsten Wochen wird sich diese Liste weiter füllen.
+          Für ein besonderes Event braucht es starke Partner und gute Unterstützung. Wir freuen uns, mit diesen engagierten Organisationen etwas auf die Beine stellen zu können. In den nächsten Wochen wird sich diese Liste weiter füllen.
         </IndentedText>
       </Container>
       <Container css={{ maxWidth: 1000 }}>
@@ -208,7 +208,7 @@ const render = data => (
         </StyledImageBox>
         <SectionHeading>Starkes Team mit einer Vision</SectionHeading>
         <IndentedText>
-          Wir glauben, dass der menschengemachte Klimawandel eine der größten Herausforderung unserer Generation ist und wir ihn nur gemeinsam eindämmen können. Unsere Mission ist es Menschen zusammenzubringen und eine Bewegung zu starten, damit wir in einer guten Zukunft leben können.
+          Wir glauben, dass der menschengemachte Klimawandel eine der größten Herausforderungen unserer Generation ist und wir ihn nur gemeinsam eindämmen können. Unsere Mission ist es, Menschen zusammenzubringen und eine Bewegung zu starten, damit wir in einer guten Zukunft leben können.
         </IndentedText>
       </Container>
     </ThemedSection>
