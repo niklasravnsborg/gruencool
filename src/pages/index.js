@@ -10,6 +10,7 @@ import Container from '../components/Container'
 import EventFeatures from '../components/PageIndex/EventFeatures'
 import NetworkSection from '../components/PageIndex/NetworkSection'
 
+import KyleDart from '../images/logo/kyle_dart.svg'
 import EdgeLeft from '../images/patterns/edge_left.svg'
 import TriangleRight from '../images/patterns/triangle_right.svg'
 
@@ -181,6 +182,25 @@ const render = data => (
         fill="#53d0ff4d"
         children={<TriangleRight/>}
       />
+    </ThemedSection>
+    <ThemedSection
+      primary="#ffe411"
+      accent="#162135"
+      text="#162135"
+    >
+      <Container css={{ maxWidth: 1000 }}>
+        <Flex flexWrap="wrap" alignItems="center">
+          <Box width={[1, 2/5]} m="0 auto" mb={[4, 0]} style={{ maxWidth: 300 }}>
+            <KyleDart/>
+          </Box>
+          <Box width={[1, 3/5]}>
+            <SectionHeading>Unser Maskottchen: Kyle der Kohl</SectionHeading>
+            <IndentedText>
+              Das ist Kyle, unser Maskottchen! Er ist ebenso Kohl wie er cool ist. Und auch wenn Kohl eigentlich nichts mit unserer Veranstaltung zu tun hat, symbolisiert er Doch den friesischen Freigeist. Er begleitet Dich durch das Event und tut dieses und jenes.
+            </IndentedText>
+          </Box>
+        </Flex>
+      </Container>
     </ThemedSection>
     <ThemedSection
       primary="white"
