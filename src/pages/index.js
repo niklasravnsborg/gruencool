@@ -196,7 +196,7 @@ const render = data => (
           <Box width={[1, 3/5]}>
             <SectionHeading>Unser Maskottchen: Kyle der Kohl</SectionHeading>
             <IndentedText>
-              Das ist Kyle, unser Maskottchen! Er ist ebenso Kohl wie er cool ist. Und auch wenn Kohl eigentlich nichts mit unserer Veranstaltung zu tun hat, symbolisiert er Doch den friesischen Freigeist. Er begleitet Dich durch das Event und tut dieses und jenes.
+              Das ist Kyle, unser Maskottchen! Er ist ebenso Kohl wie er cool ist. Und auch wenn Kohl eigentlich nichts mit unserer Veranstaltung zu tun hat, symbolisiert er doch den friesischen Freigeist. Er begleitet Dich durch das Event und tut dieses und jenes.
             </IndentedText>
           </Box>
         </Flex>
