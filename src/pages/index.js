@@ -7,6 +7,7 @@ import { Flex, Box, Card, Button, Heading, Text } from '@rebass/emotion'
 import Layout from '../components/Layout'
 import Nobreak from '../components/Nobreak'
 import Container from '../components/Container'
+import Questions from '../components/PageIndex/Questions'
 import EventFeatures from '../components/PageIndex/EventFeatures'
 import NetworkSection from '../components/PageIndex/NetworkSection'
 
@@ -228,9 +229,11 @@ const render = data => (
           <Img fluid={data.team.childImageSharp.fluid} alt="Luca, Richard, Niklas, Andreas, Maurice, Francesco, Sophie"/>
         </StyledImageBox>
         <SectionHeading>Starkes Team mit einer Vision</SectionHeading>
-        <IndentedText>
+        <IndentedText mb={5}>
           Wir glauben, dass der menschengemachte Klimawandel eine der größten Herausforderungen unserer Generation ist und wir ihn nur gemeinsam eindämmen können. Unsere Mission ist es, Menschen zusammenzubringen und eine Bewegung zu starten, damit wir in einer guten Zukunft leben können.
         </IndentedText>
+        <SectionHeading>Noch Fragen?</SectionHeading>
+        <Questions/>
       </Container>
     </ThemedSection>
     <Img
