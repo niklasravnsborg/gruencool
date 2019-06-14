@@ -214,7 +214,7 @@ const render = data => (
           Für ein besonderes Event braucht es starke Partner und gute Unterstützung. Wir freuen uns, mit diesen engagierten Organisationen etwas auf die Beine stellen zu können. In den nächsten Wochen wird sich diese Liste weiter füllen.
         </IndentedText>
       </Container>
-      <Container css={{ maxWidth: 1000 }}>
+      <Container css={{ maxWidth: 1300 }}>
         <NetworkSection/>
       </Container>
     </ThemedSection>
