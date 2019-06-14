@@ -145,7 +145,7 @@ const render = data => (
         <SectionHeading as="h1" fontSize="5" mb="2">
           Ein Event für eine <Nobreak>nachhaltige Zukunft</Nobreak>
         </SectionHeading>
-        <Text as="p" mb="3" color="accent">Das grünste Event der Nordseeküste <Nobreak>am 18. August 2019!</Nobreak></Text>
+        <Text as="p" mb="3" color="accent">Das grünste Event der Nordseeküste <Nobreak>am <b>18. August 2019</b>!</Nobreak></Text>
         <Button href="https://www.youtube.com/embed/Q3BGmVdjmiw?autoplay=true" target="_blank" as="a" variant="outline">Video ansehen</Button>
       </Container>
     </ThemedSection>
