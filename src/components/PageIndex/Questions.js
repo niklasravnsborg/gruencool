@@ -19,11 +19,15 @@ const AccordionItemPanel = styled(AccordionItemPanelBase)`
 const faqs = [
   {
     q: 'Was ist Grüncool überhaupt?',
-    a: 'Das Grüncool 2019 ist eine öffentliche Nachhaltigkeits-Veranstaltung, die aus der Motivation, eine bessere Zukunft zu gestalten, entstanden ist. Alle Teammitglieder sind freiwillig dabei und wir verfolgen kein Profitziel. Sollte ein finanzieller Überschuss entstehen, wird dieser an eine gemeinnütze Organisation gespendet.'
+    a: 'Das Grüncool 2019 ist eine Veranstaltung, die aus der Motivation entstanden ist, eine bessere Zukunft zu gestalten. Wenn wir die Erderwärmung innerhalb der nächsten 10 Jahre nicht auf 0.5°C beschränken, erreichen wir den Point-Of-No-Return. Dies hat katastrophale Folgen für alle von uns, insbesondere aber für die nächsten Generationen, unsere Kinder. Es ist dann keine Rückkehr zur Erde wie wir sie momentan als Lebensraum kennen mehr möglich. Wir finden das eher so semi-optimal und möchten deswegen informieren! Weil nur Information aber ziemlich öde sein kann bereiten wir den perfekten Mix: Entertainment, Food und Umwelt!'
+  },
+  {
+    q: 'Wie viel kostet das denn?',
+    a: 'Gute Frage! Da wir unsere frohe Botschaft so weit wie möglich verbreiten wollen, übernehmen wir Deine Eintrittskosten! Du kannst also auch als armer Student easy vorbeikommen ;) Alle Teammitglieder sind freiwillig dabei und wir verfolgen kein Profitziel. Sollte ein finanzieller Überschuss entstehen, wird dieser an eine gemeinnütze Organisation gespendet.'
   },
   {
     q: 'Wofür steht der Name?',
-    a: 'Damit die Erde, so wie wir in ihr aufgewachsen sind erhalten bleibt, ist es wichtig ein umfassendes Umweltbewusstsein zu schaffen. Unsere Mission ist es „Grün“ cool zu machen und den Zeitgeist vorran zu bringen! Passend zu unserem friesischen Heimat und der Regionalität war auch der wortverwandte Grünkohl nicht unbeabsichtigt. '
+    a: 'Damit die Erde so erhalten bleibt wie wir sie lieben, ist es wichtig ein umfassendes Umweltbewusstsein zu schaffen. Unsere Mission ist es „Grün“ cool zu machen und den Zeitgeist vorran zu bringen! Passend zur friesischen Heimat und der Region war auch der wortverwandte Grünkohl nicht ganz unbeteiligt. '
   },
   {
     q: 'Warum macht Ihr das Event?',
@@ -35,8 +39,8 @@ const faqs = [
   },
   {
     q: 'Wer ist die Zielgruppe?',
-    a: 'Jeder ist eingeladen! Umweltinteressierte und diejenigen die es werden wollen, Familien, Studierende, Schüler, Stubenhocker, Omas und Katzen.'
-  },
+    a: 'Jeder ist eingeladen! Umweltinteressierte und diejenigen die es werden wollen: Studierende, Familien, Schüler, Kinder, Stubenhocker, Party Löwen, Omas, Opas und Katzen.'
+  }
 ]
 
 export default _ => (
