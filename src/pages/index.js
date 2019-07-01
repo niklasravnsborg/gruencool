@@ -133,7 +133,7 @@ const render = data => (
       position: 'relative',
       zIndex: 0
     }}
-    desc="Ein Event für eine grüne Zukunft in Wilhelmshaven am 18. August 2019!"
+    desc="Das grünste Event der Nordseeküste in Wilhelmshaven am 18. August 2019!"
   >
     <ThemedSection
       primary="#ffe51f"
@@ -144,9 +144,9 @@ const render = data => (
     >
       <Container>
         <SectionHeading as="h1" fontSize="5" mb="2">
-          Ein Event für eine <Nobreak>nachhaltige Zukunft</Nobreak>
+          Das grünste Event der Nordseeküste
         </SectionHeading>
-        <Text as="p" mb="3" color="accent">Das grünste Event der Nordseeküste <Nobreak>am <b>18. August 2019</b> im <b>Strandcafé Fährhaus</b>!</Nobreak></Text>
+        <Text as="p" mb="3" color="accent"><Nobreak>Am <b>18. August 2019</b> im <b>Strandcafé Fährhaus</b></Nobreak></Text>
         <Button href="https://www.facebook.com/events/2409460576001254/" target="_blank" as="a" variant="outline">Zum Facebook-Event</Button>
       </Container>
     </ThemedSection>
