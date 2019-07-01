@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react'
+import React from 'react'
 import Img from 'gatsby-image'
 import { Box } from '@rebass/emotion'
 import { useStaticQuery, graphql } from 'gatsby'
@@ -58,6 +58,9 @@ export default _ => {
       </p>
       <p>
         Nun verfolgen wir ehrgeizig unser Ziel, knüpfen Kontakte und feilen an durchführbaren Aktionen. Diesen Sommer, am 18. August 2019, wollen wir ein Event starten, welches möglichst viele Menschen anzieht und Lust auf umweltbewusste Alternativen machen. Zusammen können wir dafür sorgen, dass Wilhelmshaven weiter die „grüne Stadt am Meer“ bleibt!
+      </p>
+      <p>
+        <a href="https://www.youtube.com/embed/Q3BGmVdjmiw?autoplay=true">Sieh dir unser Video an</a>!
       </p>
     </Container>
     </Layout>

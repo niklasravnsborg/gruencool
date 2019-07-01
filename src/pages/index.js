@@ -146,8 +146,8 @@ const render = data => (
         <SectionHeading as="h1" fontSize="5" mb="2">
           Ein Event für eine <Nobreak>nachhaltige Zukunft</Nobreak>
         </SectionHeading>
-        <Text as="p" mb="3" color="accent">Das grünste Event der Nordseeküste <Nobreak>am <b>18. August 2019</b>!</Nobreak></Text>
-        <Button href="https://www.youtube.com/embed/Q3BGmVdjmiw?autoplay=true" target="_blank" as="a" variant="outline">Video ansehen</Button>
+        <Text as="p" mb="3" color="accent">Das grünste Event der Nordseeküste <Nobreak>am <b>18. August 2019</b> im <b>Strandcafé Fährhaus</b>!</Nobreak></Text>
+        <Button href="https://www.facebook.com/events/2409460576001254/" target="_blank" as="a" variant="outline">Zum Facebook-Event</Button>
       </Container>
     </ThemedSection>
     <ThemedSection
@@ -250,7 +250,7 @@ const render = data => (
       primary="#ff9c96"
       accent="#162135"
     >
-      <SectionHeading textAlign="center">Sei live dabei!</SectionHeading>
+      <SectionHeading textAlign="center">Blicke hinter die Kulissen!</SectionHeading>
       <Flex justifyContent="center">
         <Box as="a" href="https://www.instagram.com/gruencoolwhv/" target="_blank">
           <InstagramIcon width="50"/>
