@@ -1,4 +1,5 @@
-import { Flex, Box, Image } from '@rebass/emotion'
+import React from 'react'
+import { Flex, Box, Image, Text } from '@rebass/emotion'
 
 import fhdh from '../../images/partners/fhdh.png'
 import karl from '../../images/partners/karl.png'
@@ -12,6 +13,7 @@ import bundjugend from '../../images/partners/bundjugend.png'
 import greenpeace from '../../images/partners/greenpeace.png'
 import einfachfilm from '../../images/partners/einfachfilm.png'
 import micheltheilen from '../../images/partners/micheltheilen.png'
+import neuebotschaftsued from '../../images/partners/neuebotschaftsued.png'
 
 const PartnerLogo = ({ href, src, alt, ...props }) => (
   <Box width={[1/2, 1/4]} px={[4, null, null, 5]} py={4} style={{ maxWidth: 320 }}>
@@ -21,7 +23,7 @@ const PartnerLogo = ({ href, src, alt, ...props }) => (
   </Box>
 )
 
-export default _ => (
+const Partners = _ => (
   <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
     <PartnerLogo
       href="https://lorient.one"
@@ -86,4 +88,18 @@ export default _ => (
       alt="Karl der Ökobot"
     />
   </Flex>
+)
+
+export default _ => (
+  <>
+    <Partners/>
+    <Box mt={[null, 2]} mb={[4, 3]}>
+      <Text textAlign="center" mb="2">Das Grüncool 2019 wird veranstaltet von:</Text>
+      <Box mx="auto" px={20} css={{ maxWidth: 510 }}>
+        <a href="https://neue-botschaft-sued.de/" target="_blank">
+          <Image src={neuebotschaftsued} alt="Neue Botschaft Sued"/>
+        </a>
+      </Box>
+    </Box>
+  </>
 )
