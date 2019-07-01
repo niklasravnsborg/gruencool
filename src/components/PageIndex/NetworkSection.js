@@ -1,6 +1,7 @@
 import { Flex, Box, Image } from '@rebass/emotion'
 
 import fhdh from '../../images/partners/fhdh.png'
+import karl from '../../images/partners/karl.png'
 import victim from '../../images/partners/victim.png'
 import lorient from '../../images/partners/lorient.png'
 import morgaen from '../../images/partners/morgaen.png'
@@ -8,6 +9,7 @@ import jadewale from '../../images/partners/jadewale.png'
 import exposify from '../../images/partners/exposify.png'
 import faehrhaus from '../../images/partners/faehrhaus.png'
 import bundjugend from '../../images/partners/bundjugend.png'
+import greenpeace from '../../images/partners/greenpeace.png'
 import einfachfilm from '../../images/partners/einfachfilm.png'
 import micheltheilen from '../../images/partners/micheltheilen.png'
 
@@ -72,6 +74,16 @@ export default _ => (
       src={bundjugend}
       alt="BUNDjugend"
       px="18%"
+    />
+    <PartnerLogo
+      href="https://www.wilhelmshaven.greenpeace.de/"
+      src={greenpeace}
+      alt="Greenpeace Wilhelmshaven"
+    />
+    <PartnerLogo
+      href="http://www.klimakarl.de/"
+      src={karl}
+      alt="Karl der Ökobot"
     />
   </Flex>
 )
