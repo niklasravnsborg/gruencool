@@ -146,7 +146,7 @@ const render = data => (
         <SectionHeading as="h1" fontSize="5" mb="2">
           Das grünste Event der Nordseeküste
         </SectionHeading>
-        <Text as="p" mb="3" color="accent"><Nobreak>Am <b>18. August 2019</b> im <b>Strandcafé Fährhaus</b></Nobreak></Text>
+        <Text as="p" mb="3" color="accent"><Nobreak>Am <b>18. August 2019 ab 13:00</b> im <b>Strandcafé Fährhaus</b></Nobreak></Text>
         <Button href="https://www.facebook.com/events/2409460576001254/" target="_blank" as="a" variant="outline">Zum Facebook-Event</Button>
       </Container>
     </ThemedSection>
