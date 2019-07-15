@@ -16,7 +16,12 @@ export default ({ floatingHeader, footerBg, title, desc, children, ...props }) =
         defaultTitle="Grüncool – Nachhaltigkeitsevent in Wilhelmshaven"
         titleTemplate="Grüncool %s"
         title={title}
-        meta={[{ name: 'description', content: desc }]}
+        meta={[
+          { name: 'description', content: desc },
+          { name: 'og:image', content: '/open_graph.jpg' },
+          { name: 'og:locale', content: 'de_DE' },
+          { name: 'og:type', content: 'website' }
+        ]}
         htmlAttributes={{'lang': 'de'}}
       />
       <Header floating={floatingHeader}/>
