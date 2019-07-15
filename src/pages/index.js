@@ -34,7 +34,6 @@ const ThemedSection = ({ primary, accent, text, bgImg, ...props }) => (
         zIndex: -20,
         ...bgImg && {
           backgroundSize: 'cover',
-          backgroundBlendMode: 'color-burn',
           backgroundImage: `url(${bgImg})`
         }
       }}
