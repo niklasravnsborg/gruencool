@@ -1,22 +1,32 @@
 import React from 'react'
 import { Flex, Box, Image, Text } from '@rebass/emotion'
 
+import wtf from '../../images/partners/wtf.png'
+import mbo from '../../images/partners/mbo.png'
 import fhdh from '../../images/partners/fhdh.png'
-import karl from '../../images/partners/karl.png'
+import kama from '../../images/partners/kama.png'
+import young from '../../images/partners/young.png'
+import demood from '../../images/partners/demood.png'
 import victim from '../../images/partners/victim.png'
 import lorient from '../../images/partners/lorient.png'
 import morgaen from '../../images/partners/morgaen.png'
-import jadewale from '../../images/partners/jadewale.png'
+import senfonie from '../../images/partners/senfonie.png'
 import exposify from '../../images/partners/exposify.png'
+import jadewale from '../../images/partners/jadewale.png'
+import cup2date from '../../images/partners/cup2date.png'
 import faehrhaus from '../../images/partners/faehrhaus.png'
 import bundjugend from '../../images/partners/bundjugend.png'
 import greenpeace from '../../images/partners/greenpeace.png'
 import einfachfilm from '../../images/partners/einfachfilm.png'
 import micheltheilen from '../../images/partners/micheltheilen.png'
+import jadekulturwerk from '../../images/partners/jadekulturwerk.png'
+import selbstfairsorgt from '../../images/partners/selbstfairsorgt.png'
+import fridaysforfuture from '../../images/partners/fridaysforfuture.png'
 import neuebotschaftsued from '../../images/partners/neuebotschaftsued.png'
+import intelligentmobiles from '../../images/partners/intelligentmobiles.png'
 
 const PartnerLogo = ({ href, src, alt, ...props }) => (
-  <Box width={[1/2, 1/4]} px={[4, null, null, 5]} py={4} style={{ maxWidth: 320 }}>
+  <Box width={[1/3, 1/4, 1/5]} px={[25, null, null, 50]} py={4} style={{ maxWidth: 320 }}>
     <a href={href} target="_blank">
       <Image src={src} alt={alt} {...props}/>
     </a>
@@ -39,6 +49,32 @@ const Partners = _ => (
       href="https://micheltheilen.com"
       src={micheltheilen}
       alt="Michel Theilen Music & Audio"
+      px="8%"
+    />
+    <PartnerLogo
+      href="https://www.wilhelmshaven-touristik.de"
+      src={wtf}
+      alt="Wilhelmshaven Touristik & Freizeit"
+    />
+    <PartnerLogo
+      href="http://www.lichtdoktor.de"
+      src={mbo}
+      alt="MBO Lichtdesign"
+    />
+    <PartnerLogo
+      href="https://www.demood.de"
+      src={demood}
+      alt="deMood"
+    />
+    <PartnerLogo
+      href="https://www.cup2date.de"
+      src={cup2date}
+      alt="Cup2date"
+    />
+    <PartnerLogo
+      href="https://www.jade-hs.de/jade-kulturwerk/"
+      src={jadekulturwerk}
+      alt="Jade Kulturwerk"
     />
     <PartnerLogo
       href="http://www.victimbrand.de"
@@ -72,10 +108,35 @@ const Partners = _ => (
       alt="JadeWale"
     />
     <PartnerLogo
+      href="https://www.intelligentmobiles.com"
+      src={intelligentmobiles}
+      alt="IntelligentMobiles"
+    />
+    <PartnerLogo
       href="https://www.bundjugend.de/"
       src={bundjugend}
       alt="BUNDjugend"
       px="18%"
+    />
+    <PartnerLogo
+      href="https://www.wilhelmshavener-senfmanufaktur.de"
+      src={senfonie}
+      alt="Senfonie Wilhelmshaven"
+    />
+    <PartnerLogo
+      href="https://www.facebook.com/GalerieKaMa/"
+      src={kama}
+      alt="Galerie KaMa"
+    />
+    <PartnerLogo
+      href="https://www.selbstfairsorgt.de"
+      src={selbstfairsorgt}
+      alt="SelbstFairSorgt"
+    />
+    <PartnerLogo
+      href="https://fridaysforfuture-whv.jimdofree.com"
+      src={fridaysforfuture}
+      alt="Fridays for Future Wilhelmshaven"
     />
     <PartnerLogo
       href="https://www.wilhelmshaven.greenpeace.de/"
@@ -83,23 +144,23 @@ const Partners = _ => (
       alt="Greenpeace Wilhelmshaven"
     />
     <PartnerLogo
-      href="http://www.klimakarl.de/"
-      src={karl}
-      alt="Karl der Ökobot"
+      href="https://www.vryoung-whv.de"
+      src={young}
+      alt="Volksbank Young Wilhelmshaven"
     />
   </Flex>
 )
 
 export default _ => (
   <>
-    <Partners/>
-    <Box mt={[null, 2]} mb={[4, 3]}>
+    <Box mt={4} mb={4}>
       <Text textAlign="center" mb="2">Das Grüncool 2019 wird veranstaltet von:</Text>
-      <Box mx="auto" px={20} css={{ maxWidth: 510 }}>
+      <Box mx="auto" px={20} css={{ maxWidth: 460 }}>
         <a href="https://neue-botschaft-sued.de/" target="_blank">
           <Image src={neuebotschaftsued} alt="Neue Botschaft Sued"/>
         </a>
       </Box>
     </Box>
+    <Partners/>
   </>
 )
