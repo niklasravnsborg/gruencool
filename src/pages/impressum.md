@@ -1,22 +1,37 @@
 ---
-title: "Datenschutz"
+title: "Impressum & Datenschutz"
 layout: page
-path: "/datenschutz/"
+path: "/impressum/"
 ---
+
+**Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV**  
+Grüncool  
+Karl-Harms Str. 18  
+26419 Schortens
+
+**Kontakt**  
+Mail-Adresse: <a href="mailto:info@gruen.cool" target="_blank">info@gruen.cool</a>  
+Telefon: <a href="tel:+4916781704372">+49 167 81704372</a>
+
+**Veranstalter am 18. August 2019**  
+Neue Botschaft Sued e.V.  
+Eingetragen im Vereinsregister.  
+Registergericht: Amtsgericht Oldenburg (Oldenburg)  
+Registernummer: VR 201561  
+
+Gemeinnützig durch Bescheid nach § 60a Abs. 1 AO über die gesonderte Feststellung der Einhaltung der satzungsmäßigen Voraussetzungen nach §§ 51, 59, 60 und 61 AO
+
+**Inhalte**  
+Alle Logos von unseren Partnern wurden uns von diesen zur Verfügung gestellt und in Absprache auf dieser Website eingebunden.  
+
+**Webdesign**  
+Webdesign von Niklas Ravnsborg-Gjertsen, _Quellcode [auf GitHub verfügbar](https://github.com/niklasravnsborg/gruencool)_
+
+## Datenschutz
 
 Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profile auf (nachfolgend gemeinsam bezeichnet als „Onlineangebot“). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).
 
-## Verantwortlicher
-Neue Botschaft Sued e.V.  
-Weserstraße 77  
-26382 Wilhelmshaven  
-
-Telefon: 04421 4825192  
-Mail-Adresse: info@neue-botschaft-sued.de  
-Ansprechpartner: Marcus Scharfenort (1. Vorsitzender)  
-Link zum Impressum: http://neue-botschaft-sued.de/impressum/
-
-##Arten der verarbeiteten Daten:
+## Arten der verarbeiteten Daten:
 * Bestandsdaten (z.B., Namen, Adressen).
 * Kontaktdaten (z.B., E-Mail, Telefonnummern).
 * Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos).
