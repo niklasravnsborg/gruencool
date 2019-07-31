@@ -11,7 +11,7 @@ export default _ => (
 
     <p>
       <b>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</b><br/>
-      Grüncool (Francesco Huber)<br/>
+      Grüncool<br/>
       Karl-Harms Str. 18<br/>
       26419 Schortens<br/>
     </p>

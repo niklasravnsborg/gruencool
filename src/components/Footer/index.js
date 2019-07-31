@@ -21,7 +21,8 @@ export default ({ bg = '#ffe51f' }) => (
       <Flex flexWrap="wrap" justifyContent="space-between" mx="auto" css={{ maxWidth: 450 }}>
         <Link to="/team/">Team</Link> |
         <a href="mailto:info@gruen.cool">Kontakt</a> |
-        <Link to="/impressum/">Impressum</Link>
+        <Link to="/impressum/">Impressum</Link> |
+        <Link to="/datenschutz/">Datenschutz</Link>
       </Flex>
     </Container>
   </Box>
