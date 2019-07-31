@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: 'Wie viel kostet das denn?',
-    a: 'Gute Frage! Da wir unsere frohe Botschaft so weit wie möglich verbreiten wollen, übernehmen wir Deine Eintrittskosten! Du kannst also auch als armer Student easy vorbeikommen ;) Alle Teammitglieder sind freiwillig dabei und wir verfolgen kein Profitziel. Sollte ein finanzieller Überschuss entstehen, wird dieser an eine gemeinnütze Organisation gespendet.'
+    a: 'Gute Frage! Es gibt keine Eintrittskosten, da es sich sich bei der Veranstaltung um ein nicht kommerzielles Projekt handelt! Du kannst also auch als armer Student easy vorbeikommen ;) Alle Teammitglieder sind freiwillig dabei und wir verfolgen kein Profitziel. Sollte ein finanzieller Überschuss entstehen, wird dieser an eine gemeinnütze Organisation gespendet.'
   },
   {
     q: 'Wofür steht der Name?',
