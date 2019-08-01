@@ -1,12 +1,17 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { ThemeProvider } from 'emotion-theming'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Flex, Box, Card, Button, Heading, Text } from '@rebass/emotion'
+import { Flex, Box, Button, Text } from '@rebass/emotion'
 
 import Layout from '../components/Layout'
 import Nobreak from '../components/Nobreak'
 import Container from '../components/Container'
+import IndentedText from '../components/IndentedText'
+import ThemedSection from '../components/ThemedSection'
+import SectionHeading from '../components/SectionHeading'
+import StyledImageBox from '../components/StyledImageBox'
+import BackgroundArtifact from '../components/BackgroundArtifact'
+
 import Questions from '../components/PageIndex/Questions'
 import EventFeatures from '../components/PageIndex/EventFeatures'
 import NetworkSection from '../components/PageIndex/NetworkSection'
@@ -19,88 +24,6 @@ import FacebookIcon from '../images/icons/facebook.svg'
 import InstagramIcon from '../images/icons/instagram.svg'
 
 import eventBackground from '../images/backgrounds/event.jpg'
-
-const ThemedSection = ({ primary, accent, text, bgImg, ...props }) => (
-  <ThemeProvider theme={{
-    colors: { primary, accent }
-  }}>
-    <Card
-      pt="5"
-      pb="5"
-      color={text ? text : 'white'}
-      bg="primary"
-      css={{
-        position: 'relative',
-        zIndex: -20,
-        ...bgImg && {
-          backgroundSize: 'cover',
-          backgroundImage: `url(${bgImg})`
-        }
-      }}
-      {...props}
-    />
-  </ThemeProvider>
-)
-
-const SectionHeading = props => (
-  <Heading
-    color="accent"
-    mb={3}
-    {...props}
-  />
-)
-
-const IndentedText = props => (
-  <Flex>
-    <Box
-      flex="none"
-      bg="accent"
-      ml="4"
-      mr="3"
-      css={{
-        width: 2,
-        height: 40
-      }}
-    />
-    <Text
-      {...props}
-    />
-  </Flex>
-)
-
-const StyledImageBox = props => (
-  <Box
-    {...props}
-    css={theme => ({
-      position: 'relative',
-      ':after': {
-        content: '""',
-        position: 'absolute',
-        top: 12,
-        left: 12,
-        width: '100%',
-        height: '100%',
-        borderBottom: `3px solid ${theme.colors.accent}`,
-        borderRight: `3px solid ${theme.colors.accent}`,
-      }
-    })}
-  />
-)
-
-const BackgroundArtifact = ({ top = null, bottom = null, left = 0, right = 0, fill, ...props }) => (
-  <Box
-    css={{
-      position: 'absolute',
-      top, bottom, left, right,
-      zIndex: -10,
-      'svg': { fill },
-      '@media(min-width: 500px)': {
-        display: 'none'
-      }
-    }}
-    {...props}
-  />
-)
 
 export default _ => {
   const data = useStaticQuery(graphql`
