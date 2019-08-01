@@ -45,8 +45,8 @@ const faqs = [
 
 export default _ => (
   <Accordion>
-    {faqs.map(faq =>
-      <AccordionItem>
+    {faqs.map((faq, index) =>
+      <AccordionItem key={index}>
         <AccordionItemHeading>
           <AccordionItemButton>
             {faq.q}

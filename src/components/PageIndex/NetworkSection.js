@@ -26,7 +26,7 @@ import neuebotschaftsued from '../../images/partners/neuebotschaftsued.png'
 import intelligentmobiles from '../../images/partners/intelligentmobiles.png'
 
 const PartnerLogo = ({ href, src, alt, ...props }) => (
-  <Box width={[1/3, 1/4, 1/5]} px={[25, null, null, 50]} py={4} style={{ maxWidth: 320 }}>
+  <Box width={[1/3, 1/4, 1/5]} px={[12, 24, 30, 40]} py={[24, 32]} style={{ maxWidth: 320 }}>
     <a href={href} target="_blank">
       <Image src={src} alt={alt} {...props}/>
     </a>

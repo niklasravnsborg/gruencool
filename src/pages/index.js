@@ -139,7 +139,7 @@ const render = data => (
           Wir freuen uns, mit diesen engagierten Organisationen unser Event auf die Beine stellen zu können.
         </IndentedText>
       </Container>
-      <Container css={{ maxWidth: 1300 }}>
+      <Container px={0} css={{ maxWidth: 1300 }}>
         <NetworkSection/>
       </Container>
     </ThemedSection>
