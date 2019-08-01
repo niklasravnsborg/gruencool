@@ -135,7 +135,8 @@ const render = data => (
       <Container>
         <SectionHeading>Unser Netzwerk <Nobreak>wächst und gedeiht</Nobreak></SectionHeading>
         <IndentedText>
-          Für ein besonderes Event braucht es starke Partner und gute Unterstützung. Wir freuen uns, mit diesen engagierten Organisationen etwas auf die Beine stellen zu können. In den nächsten Wochen wird sich diese Liste weiter füllen.
+          Für ein besonderes Event braucht es starke Partner und gute Unterstützung.
+          Wir freuen uns, mit diesen engagierten Organisationen unser Event auf die Beine stellen zu können.
         </IndentedText>
       </Container>
       <Container css={{ maxWidth: 1300 }}>
