@@ -3,6 +3,7 @@ import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Flex, Box, Button, Text } from '@rebass/emotion'
 
+import Team from '../components/Team'
 import Layout from '../components/Layout'
 import Nobreak from '../components/Nobreak'
 import Container from '../components/Container'
@@ -154,6 +155,11 @@ const render = data => (
         <IndentedText mb={5}>
           Wir glauben, dass der menschengemachte Klimawandel eine der größten Herausforderungen unserer Generation ist und wir ihn nur gemeinsam eindämmen können. Unsere Mission ist es, Menschen zusammenzubringen und eine Bewegung zu starten, damit wir in einer guten Zukunft leben können.
         </IndentedText>
+      </Container>
+      <Container css={{ maxWidth: 1300 }}>
+        <Team/>
+      </Container>
+      <Container>
         <SectionHeading>Noch Fragen?</SectionHeading>
         <Questions/>
       </Container>

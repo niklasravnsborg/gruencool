@@ -9,6 +9,9 @@ export default new Typography({
     body: {
       overflowX: 'hidden'
     },
+    'p': {
+      hyphens: 'auto'
+    },
     'p a, ul a': {
       borderBottom: '1px solid'
     },
