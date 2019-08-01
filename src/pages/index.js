@@ -143,6 +143,7 @@ const render = data => (
       </Container>
     </ThemedSection>
     <ThemedSection
+      id="team"
       primary="#162135"
       accent="#FF9D94"
       pb={2}

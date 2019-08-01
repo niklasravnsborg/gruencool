@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Flex, Box } from '@rebass/emotion'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import Container from '../Container'
 import Wordmark from '../../images/logo/wordmark.svg'
@@ -37,7 +38,7 @@ export default ({ floating }) => (
               <a href="https://goo.gl/maps/AibFeaWfJB7cuAj46" target="_blank" children="Location"/>
             </NavLink>
             <NavLink>
-              <Link to="/team/" children="Team"/>
+              <AnchorLink offset="200" href="#team" children="Team"/>
             </NavLink>
           </Flex>
         </Box>
