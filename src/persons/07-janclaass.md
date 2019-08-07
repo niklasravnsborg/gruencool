@@ -1,5 +1,5 @@
 ---
-name: Jan-Claas
+name: Jan Claas
 image: ./images/janclaas.jpg
 order: 7
 ---
