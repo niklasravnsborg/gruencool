@@ -1,10 +1,34 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Location } from '@reach/router'
 import { Flex, Box } from '@rebass/emotion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import Container from '../Container'
 import Wordmark from '../../images/logo/wordmark.svg'
+
+const FallbackAnchorLink = ({ href, children, ...props }) => (
+  <Location>
+    {locationProps => {
+      if (locationProps.location.pathname === '/') {
+        return (
+          <AnchorLink
+            href={href}
+            children={children}
+            {...props}
+          />
+        )
+      } else {
+        return (
+          <Link
+            to={`/${href}`}
+            children={children}
+          />
+        )
+      }
+    }}
+  </Location>
+)
 
 const NavLink = ({ children }) => (
   <Box
@@ -38,7 +62,7 @@ export default ({ floating }) => (
               <a href="https://goo.gl/maps/AibFeaWfJB7cuAj46" target="_blank" children="Location"/>
             </NavLink>
             <NavLink>
-              <AnchorLink offset="200" href="#team" children="Team"/>
+              <FallbackAnchorLink offset="200" href="#team" children="Team"/>
             </NavLink>
           </Flex>
         </Box>
