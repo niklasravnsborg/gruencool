@@ -24,8 +24,7 @@ export default () => {
   const data = useStaticQuery(graphql`
     query TeamQuery {
       persons: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/src/persons/" } },
-        sort: {fields: frontmatter___order }
+        filter: { fileAbsolutePath: { regex: "/src/persons/" } }
       ) {
         edges {
           node {
