@@ -83,7 +83,7 @@ export default _ => (
       icon={<AvocadoIcon/>}
       title="Streetfood-Style"
       content={<>
-        Keine Sorge: Für den Mampf ist gesorgt! Denn das <Nobreak>L‘ Orient</Nobreak> präsentiert uns am Tag des Events ein Geschmackserlebnis, für welches allein es sich lohnt vorbei zu schauen. In klassischer Streetfood-Manier werden alle Speisen vor Deinen Augen zubereitet und umweltbewusst serviert. Auf der Karte stehen natürlich auch vegane oder vegetarische Gerichte.
+        Keine Sorge: Für den Mampf ist gesorgt! Denn das <Nobreak>L‘ Orient</Nobreak> und das Strandcafé Fährhaus präsentieren uns am Tag des Events ein Geschmackserlebnis, für welches allein es sich lohnt vorbei zu schauen. Alle Speisen werden umweltbewusst serviert und auf der Karte stehen natürlich auch vegane oder vegetarische Gerichte.
       </>}
     />
     {/* <GridListItem
