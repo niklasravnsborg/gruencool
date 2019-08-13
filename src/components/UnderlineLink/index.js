@@ -1,11 +1,11 @@
+import React from 'react'
 import { Box } from '@rebass/emotion'
 
 export default props => (
   <Box
-    mx="auto"
-    px="3"
     css={{
-      maxWidth: props.wide ? 1300 : 800
+      display: 'inline-block',
+      borderBottom: '2px solid black'
     }}
     {...props}
   />

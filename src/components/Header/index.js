@@ -5,6 +5,7 @@ import { Flex, Box } from '@rebass/emotion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import Container from '../Container'
+import UnderlineLink from '../UnderlineLink'
 import Wordmark from '../../images/logo/wordmark.svg'
 
 const FallbackAnchorLink = ({ href, children, ...props }) => (
@@ -31,13 +32,7 @@ const FallbackAnchorLink = ({ href, children, ...props }) => (
 )
 
 const NavLink = ({ children }) => (
-  <Box
-    mx="2"
-    css={{
-      borderBottom: '2px solid black'
-    }}
-    children={children}
-  />
+  <UnderlineLink mx="3" children={children}/>
 )
 
 export default ({ floating }) => (
@@ -60,6 +55,9 @@ export default ({ floating }) => (
           <Flex mx={-2}>
             <NavLink>
               <a href="https://goo.gl/maps/AibFeaWfJB7cuAj46" target="_blank" children="Location"/>
+            </NavLink>
+            <NavLink>
+              <Link to="partner" children="Partner"/>
             </NavLink>
             <NavLink>
               <FallbackAnchorLink offset="200" href="#team" children="Team"/>

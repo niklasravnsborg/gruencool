@@ -23,6 +23,13 @@ module.exports = {
         name: 'persons'
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/partners`,
+        name: 'partners'
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     {

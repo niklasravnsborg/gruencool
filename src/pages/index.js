@@ -139,7 +139,7 @@ const render = data => (
           Wir freuen uns, mit diesen engagierten Organisationen unser Event auf die Beine stellen zu können.
         </IndentedText>
       </Container>
-      <Container px={0} css={{ maxWidth: 1300 }}>
+      <Container px={0} wide>
         <NetworkSection/>
       </Container>
     </ThemedSection>
@@ -158,7 +158,7 @@ const render = data => (
           Wir glauben, dass der menschengemachte Klimawandel eine der größten Herausforderungen unserer Generation ist und wir ihn nur gemeinsam eindämmen können. Unsere Mission ist es, Menschen zusammenzubringen und eine Bewegung zu starten, damit wir in einer guten Zukunft leben können.
         </IndentedText>
       </Container>
-      <Container css={{ maxWidth: 1300 }}>
+      <Container wide>
         <Team/>
       </Container>
       <Container>
