@@ -18,8 +18,10 @@ import faehrhaus from '../../images/partners/faehrhaus.png'
 import bundjugend from '../../images/partners/bundjugend.png'
 import greenpeace from '../../images/partners/greenpeace.png'
 import einfachfilm from '../../images/partners/einfachfilm.png'
+import quadratblick from '../../images/partners/quadratblick.png'
 import micheltheilen from '../../images/partners/micheltheilen.png'
 import jadekulturwerk from '../../images/partners/jadekulturwerk.png'
+import barthelstiftung from '../../images/partners/barthelstiftung.png'
 import selbstfairsorgt from '../../images/partners/selbstfairsorgt.png'
 import fridaysforfuture from '../../images/partners/fridaysforfuture.png'
 import neuebotschaftsued from '../../images/partners/neuebotschaftsued.png'
@@ -57,6 +59,12 @@ const Partners = _ => (
       alt="Wilhelmshaven Touristik & Freizeit"
     />
     <PartnerLogo
+      href="https://www.barthel-stiftung.de"
+      src={barthelstiftung}
+      alt="Barthel Stiftung"
+      px="12%"
+    />
+    <PartnerLogo
       href="http://www.lichtdoktor.de"
       src={mbo}
       alt="MBO Lichtdesign"
@@ -65,6 +73,12 @@ const Partners = _ => (
       href="https://www.demood.de"
       src={demood}
       alt="deMood"
+    />
+    <PartnerLogo
+      href="https://www.quadratblick.de"
+      src={quadratblick}
+      alt="Quadratblick"
+      px="22%"
     />
     <PartnerLogo
       href="https://www.cup2date.de"
@@ -103,6 +117,36 @@ const Partners = _ => (
       alt="Morgaen Café"
     />
     <PartnerLogo
+      href="https://www.bundjugend.de/"
+      src={bundjugend}
+      alt="BUNDjugend"
+      px="20%"
+    />
+    <PartnerLogo
+      href="https://www.wilhelmshavener-senfmanufaktur.de"
+      src={senfonie}
+      alt="Senfonie Wilhelmshaven"
+      px="15%"
+    />
+    <PartnerLogo
+      href="https://www.facebook.com/GalerieKaMa/"
+      src={kama}
+      alt="Galerie KaMa"
+      px="15%"
+    />
+    <PartnerLogo
+      href="https://www.selbstfairsorgt.de"
+      src={selbstfairsorgt}
+      alt="SelbstFairSorgt"
+      px="15%"
+    />
+    <PartnerLogo
+      href="https://fridaysforfuture-whv.jimdofree.com"
+      src={fridaysforfuture}
+      alt="Fridays for Future Wilhelmshaven"
+      px="15%"
+    />
+    <PartnerLogo
       href="http://mst-hillmann.de/jadewale/"
       src={jadewale}
       alt="JadeWale"
@@ -111,32 +155,6 @@ const Partners = _ => (
       href="https://www.intelligentmobiles.com"
       src={intelligentmobiles}
       alt="IntelligentMobiles"
-    />
-    <PartnerLogo
-      href="https://www.bundjugend.de/"
-      src={bundjugend}
-      alt="BUNDjugend"
-      px="18%"
-    />
-    <PartnerLogo
-      href="https://www.wilhelmshavener-senfmanufaktur.de"
-      src={senfonie}
-      alt="Senfonie Wilhelmshaven"
-    />
-    <PartnerLogo
-      href="https://www.facebook.com/GalerieKaMa/"
-      src={kama}
-      alt="Galerie KaMa"
-    />
-    <PartnerLogo
-      href="https://www.selbstfairsorgt.de"
-      src={selbstfairsorgt}
-      alt="SelbstFairSorgt"
-    />
-    <PartnerLogo
-      href="https://fridaysforfuture-whv.jimdofree.com"
-      src={fridaysforfuture}
-      alt="Fridays for Future Wilhelmshaven"
     />
     <PartnerLogo
       href="https://www.wilhelmshaven.greenpeace.de/"
