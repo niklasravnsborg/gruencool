@@ -59,9 +59,6 @@ export default ({ floating }) => (
             <NavLink>
               <Link to="programm" children="Programm"/>
             </NavLink>
-            <NavLink>
-              <FallbackAnchorLink offset="200" href="#team" children="Team"/>
-            </NavLink>
           </Flex>
         </Box>
       </Flex>
