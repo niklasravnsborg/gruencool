@@ -1,9 +1,10 @@
 import React from 'react'
 
 import Layout from '../components/Layout'
-import Partners from '../components/Partners'
 import Container from '../components/Container'
 import ThemedSection from '../components/ThemedSection'
+
+import Partner from '../components/Sections/Partner'
 
 export default _ => (
   <Layout
@@ -15,7 +16,7 @@ export default _ => (
       accent="#162135"
     >
       <Container wide>
-        <Partners/>
+        <Partner/>
       </Container>
     </ThemedSection>
   </Layout>

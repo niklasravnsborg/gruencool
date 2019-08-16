@@ -41,6 +41,7 @@ export default () => {
               <UnderlineLink>
                 <Link
                   href={partner.node.frontmatter.website}
+                  target="_blank"
                   color="accent"
                   children="Zur Website"
                 />

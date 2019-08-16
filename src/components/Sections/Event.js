@@ -1,9 +1,8 @@
 import React from 'react'
 import { Box, Card, Heading, Text } from '@rebass/emotion'
 
-import Nobreak from '../../components/Nobreak'
+import Nobreak from '../Nobreak'
 
-import ToolboxIcon from '../../images/icons/toolbox.svg'
 import ProductsIcon from '../../images/icons/products.svg'
 import PeopleIcon from '../../images/icons/people.svg'
 import MicrophoneIcon from '../../images/icons/microphone.svg'
@@ -86,11 +85,6 @@ export default _ => (
         Keine Sorge: Für den Mampf ist gesorgt! Denn das <Nobreak>L‘ Orient</Nobreak> und das Strandcafé Fährhaus präsentieren uns am Tag des Events ein Geschmackserlebnis, für welches allein es sich lohnt vorbei zu schauen. Alle Speisen werden umweltbewusst serviert und auf der Karte stehen natürlich auch vegane oder vegetarische Gerichte.
       </>}
     />
-    {/* <GridListItem
-      icon={<ToolboxIcon/>}
-      title="Repair-Station"
-      content="Wellness für deinen Drahtesel!"
-    /> */}
     <GridListItem
       icon={<MicrophoneIcon/>}
       title="On the Stage"

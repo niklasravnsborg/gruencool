@@ -3,7 +3,6 @@ import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Flex, Box, Button, Text } from '@rebass/emotion'
 
-import Team from '../components/Team'
 import Layout from '../components/Layout'
 import Nobreak from '../components/Nobreak'
 import Container from '../components/Container'
@@ -13,9 +12,10 @@ import SectionHeading from '../components/SectionHeading'
 import StyledImageBox from '../components/StyledImageBox'
 import BackgroundArtifact from '../components/BackgroundArtifact'
 
-import Questions from '../components/PageIndex/Questions'
-import EventFeatures from '../components/PageIndex/EventFeatures'
-import NetworkSection from '../components/PageIndex/NetworkSection'
+import FAQ from '../components/Sections/FAQ'
+import Team from '../components/Sections/Team'
+import Event from '../components/Sections/Event'
+import Netzwerk from '../components/Sections/Netzwerk'
 
 import KyleDart from '../images/logo/kyle_dart.svg'
 import EdgeLeft from '../images/patterns/edge_left.svg'
@@ -87,7 +87,7 @@ const render = data => (
           Grüncool hat das Ziel Gespräche anzustubsen. Wir stehen für eine <b>lebenswerte Zukunft</b> und möchten Ideen darüber verbreiten, was wir heute für diese tun können!<br/>
           Deswegen planen wir das grünste Event der Nordseeküste in unserer Heimatstadt Wilhelmshaven – mit spannenden Aktionen ist das Event ein Erlebnis für Studierende, Familien, Umweltinteressierte und Menschen, die die Welt ein kleines bisschen besser machen wollen.
         </IndentedText>
-        <EventFeatures/>
+        <Event/>
       </Container>
       <BackgroundArtifact
         top="0"
@@ -140,7 +140,7 @@ const render = data => (
         </IndentedText>
       </Container>
       <Container px={0} wide>
-        <NetworkSection/>
+        <Netzwerk/>
       </Container>
     </ThemedSection>
     <ThemedSection
@@ -163,7 +163,7 @@ const render = data => (
       </Container>
       <Container>
         <SectionHeading>Noch Fragen?</SectionHeading>
-        <Questions/>
+        <FAQ/>
       </Container>
     </ThemedSection>
     <Img
