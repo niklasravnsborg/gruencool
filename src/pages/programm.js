@@ -7,8 +7,8 @@ import ThemedSection from '../components/ThemedSection'
 
 export default _ => (
   <Layout
-    title="Team"
-    desc="Wir sind eine junge motivierte Truppe aus Wilhelmshaven. Unser Ziel ist es, das Nachhaltigkeitsbewusstsein in der Stadt zu stärken."
+    title="Programm"
+    desc="Unsere Partner und unser Team haben ein reichhaltiges Programm für den 18. August im Strandcafé Fährhaus vorbereitet"
   >
     <ThemedSection
       primary="#ffe51f"

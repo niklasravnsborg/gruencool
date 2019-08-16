@@ -57,7 +57,7 @@ export default ({ floating }) => (
               <a href="https://goo.gl/maps/AibFeaWfJB7cuAj46" target="_blank" children="Location"/>
             </NavLink>
             <NavLink>
-              <Link to="partner" children="Partner"/>
+              <Link to="programm" children="Programm"/>
             </NavLink>
             <NavLink>
               <FallbackAnchorLink offset="200" href="#team" children="Team"/>

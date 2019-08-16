@@ -25,7 +25,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 }
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
+
+  const redirects = [
+    { f: '/partner/', t: '/programm/' },
+  ]
+
+  redirects.forEach(({ f, t }) => createRedirect({
+    fromPath: f,
+    toPath: t,
+    isPermanent: true
+  }))
 
   return new Promise((resolve, reject) => {
     const pageTemplate = path.resolve('./src/templates/page.js')
