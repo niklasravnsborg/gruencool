@@ -5,6 +5,7 @@ import wtf from '../../images/partners/wtf.png'
 import mbo from '../../images/partners/mbo.png'
 import fhdh from '../../images/partners/fhdh.png'
 import kama from '../../images/partners/kama.png'
+import diyww from '../../images/partners/diyww.png'
 import young from '../../images/partners/young.png'
 import demood from '../../images/partners/demood.png'
 import victim from '../../images/partners/victim.png'
@@ -81,6 +82,12 @@ const Partners = _ => (
       px="22%"
     />
     <PartnerLogo
+      href="https://diyww.de"
+      src={diyww}
+      alt="DIY Werkstatt Wilhelmshaven"
+      px="22%"
+    />
+    <PartnerLogo
       href="https://www.cup2date.de"
       src={cup2date}
       alt="Cup2date"
@@ -110,11 +117,6 @@ const Partners = _ => (
       href="https://varafy.de"
       src={einfachfilm}
       alt="einfach film"
-    />
-    <PartnerLogo
-      href="https://www.facebook.com/morgaenwilhelmshaven/"
-      src={morgaen}
-      alt="Morgaen Café"
     />
     <PartnerLogo
       href="https://www.bundjugend.de/"
@@ -152,9 +154,15 @@ const Partners = _ => (
       alt="JadeWale"
     />
     <PartnerLogo
+      href="https://www.facebook.com/morgaenwilhelmshaven/"
+      src={morgaen}
+      alt="Morgaen Café"
+    />
+    <PartnerLogo
       href="https://www.intelligentmobiles.com"
       src={intelligentmobiles}
       alt="IntelligentMobiles"
+      px="6%"
     />
     <PartnerLogo
       href="https://www.wilhelmshaven.greenpeace.de/"
