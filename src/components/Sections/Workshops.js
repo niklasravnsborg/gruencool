@@ -4,18 +4,18 @@ import { Flex, Box, Text, Heading } from '@rebass/emotion';
 const items = [
   {
     time: "13:00 - 20:00",
-    title: "Aus alten Büchern Kladden binden",
+    title: "Aus alten Büchern neue Kladden binden",
     organizor: "Galerie Kama"
   },
   {
     time: "13:00 - 20:00",
-    title: "T-Shirts in Jutebeutel verwandeln",
+    title: "T-Shirts in Taschen verwandeln",
     organizor: "DIY-Werkstatt"
   },
   {
     time: "13:15 - 14:15 und 16:45 – 17:45",
-    title: "Waschmittel selber herstellen",
-    organizor: "Luna Hilbers"
+    title: "Nachhaltiges Waschmittel herstellen",
+    organizor: "Luna von Grüncool"
   },
   {
     time: "14:30 - 16:30 und 18:00 - 20:00",
