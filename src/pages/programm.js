@@ -1,4 +1,5 @@
 import React from 'react'
+import { Heading } from '@rebass/emotion';
 
 import Layout from '../components/Layout'
 import Container from '../components/Container'
@@ -7,8 +8,6 @@ import ThemedSection from '../components/ThemedSection'
 import Partner from '../components/Sections/Partner'
 import Programm from '../components/Sections/Programm';
 import Workshops from '../components/Sections/Workshops';
-import Header from '../components/Header';
-import { Heading } from '@rebass/emotion';
 
 export default _ => (
   <Layout
