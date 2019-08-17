@@ -14,12 +14,12 @@ const items = [
   },
   {
     time: "13.00 – 20.00 Uhr",
-    title: "Ersatz für Plastikfolien herstellen",
+    title: "Ersatz für Frischhaltefolien herstellen",
     organizor: "BUNDjugend"
   },
   {
     time: "13.15 – 14.15 Uhr und 16.45 – 17.45 Uhr",
-    title: "Nachhaltiges Waschmittel herstellen",
+    title: "Nachhaltiges Waschmittel produzieren",
     organizor: "Luna von Grüncool"
   },
   {
