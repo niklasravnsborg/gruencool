@@ -31,34 +31,32 @@ const FallbackAnchorLink = ({ href, children, ...props }) => (
   </Location>
 )
 
-const NavLink = ({ children }) => (
-  <UnderlineLink mx="3" children={children}/>
-)
-
 export default ({ floating }) => (
   <Box
     as="header"
-    py="4"
+    py={[null, 2]}
+    mb="4"
+    bg={floating ? '' : 'accent'}
     css={{
       position: floating && 'absolute',
       width: '100%'
     }}
   >
-    <Container>
-      <Flex justifyContent="space-between" flexWrap="wrap" mx={-3}>
-        <Box px="3">
+    <Container py="3">
+      <Flex justifyContent="space-between" alignItems="center" flexWrap="wrap" mx={-2}>
+        <Box px="2">
           <Link to="/">
-            <Wordmark width="140"/>
+            <Wordmark width="128"/>
           </Link>
         </Box>
-        <Box px="3" mt="2">
-          <Flex mx={-2}>
-            <NavLink>
+        <Box px="2">
+          <Flex mx={[-2, -3]} >
+            <UnderlineLink mx={[2, 3]}>
               <a href="https://goo.gl/maps/AibFeaWfJB7cuAj46" target="_blank" children="Location"/>
-            </NavLink>
-            <NavLink>
+            </UnderlineLink>
+            <UnderlineLink mx={[2, 3]}>
               <Link to="/programm/" children="Programm"/>
-            </NavLink>
+            </UnderlineLink>
           </Flex>
         </Box>
       </Flex>

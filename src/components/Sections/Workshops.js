@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Box, Text, Heading } from '@rebass/emotion';
+import { Flex, Text } from '@rebass/emotion';
 
 const items = [
   {
@@ -35,8 +35,7 @@ const items = [
 ]
 
 export default () => (
-  <Box>
-    <Heading mb="3">Workshops</Heading>
+  <>
     {items.map(item => (
       <Flex mb={3}>
         <Text flex="1">
@@ -46,5 +45,5 @@ export default () => (
         </Text>
       </Flex>
     ))}
-  </Box>
+  </>
 )

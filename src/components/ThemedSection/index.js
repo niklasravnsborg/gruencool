@@ -12,9 +12,9 @@ export default ({ primary, accent, text, bgImg, ...props }) => (
       color={text ? text : 'white'}
       bg="primary"
       css={{
+        position: 'relative',
+        zIndex: -20,
         ...bgImg && {
-          position: 'relative',
-          zIndex: -20,
           backgroundSize: 'cover',
           backgroundImage: `url(${bgImg})`
         }

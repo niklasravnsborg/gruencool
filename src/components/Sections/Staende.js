@@ -1,16 +1,15 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Flex, Box, Text, Link } from '@rebass/emotion'
+import { Flex, Box, Text, Heading, Link } from '@rebass/emotion'
 
 import IndentedText from '../IndentedText'
 import UnderlineLink from '../UnderlineLink'
-import SectionHeading from '../SectionHeading'
 
 export default () => {
   const data = useStaticQuery(graphql`
-    query PartnersQuery {
-      partners: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/src/partners/" } },
+    query StaendeQuery {
+      staende: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/src/staende/" } },
         sort: { fields: fileAbsolutePath }
       ) {
         edges {
@@ -26,23 +25,20 @@ export default () => {
     }
   `)
   return (
-    <Flex flexWrap="wrap" mx={-4}>
-      {data.partners.edges.map(partner => (
-        <Box width={[1, null, 1/2]} mx="auto" p={4} key={partner.node.frontmatter.name}>
-          <SectionHeading>{partner.node.frontmatter.name}</SectionHeading>
+    <Flex flexWrap="wrap" m={-4}>
+      {data.staende.edges.map(item => (
+        <Box width={[1, null, 1/2]} mx="auto" p={4} key={item.node.frontmatter.name}>
+          <Heading mb="3" fontSize="3">{item.node.frontmatter.name}</Heading>
           <IndentedText>
             <Text
-              fontSize="2"
-              dangerouslySetInnerHTML={{ __html: partner.node.html}}
-              color="accent"
+              dangerouslySetInnerHTML={{ __html: item.node.html}}
               css={{ 'p': { marginBottom: '.5em' } }}
             />
-            {partner.node.frontmatter.website &&
+            {item.node.frontmatter.website &&
               <UnderlineLink>
                 <Link
-                  href={partner.node.frontmatter.website}
+                  href={item.node.frontmatter.website}
                   target="_blank"
-                  color="accent"
                   children="Zur Website"
                 />
               </UnderlineLink>

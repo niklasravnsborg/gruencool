@@ -5,7 +5,8 @@ export default props => (
   <Box
     css={{
       display: 'inline-block',
-      borderBottom: '2px solid black'
+      borderBottom: '2px solid black',
+      a: { color: 'black' }
     }}
     {...props}
   />

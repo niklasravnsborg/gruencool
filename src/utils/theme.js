@@ -4,8 +4,8 @@ export default {
     12, 14, 16, 20, 24, 32, 48, 64
   ],
   colors: {
-    primary: '#fff03d',
-    accent: '#44449c',
+    primary: 'white',
+    accent: '#ffe51f',
     lightgray: '#f6f6ff',
     dark: '#162135'
   },

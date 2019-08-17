@@ -61,7 +61,7 @@ const render = data => (
     <ThemedSection
       primary="#ffe51f"
       accent="#162135"
-      py={192}
+      py={184}
       bgImg={eventBackground}
       backgroundPosition="center"
     >
