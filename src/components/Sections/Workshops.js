@@ -3,27 +3,27 @@ import { Flex, Box, Text, Heading } from '@rebass/emotion';
 
 const items = [
   {
-    time: "13:00 - 20:00",
+    time: "13.00 – 20.00 Uhr",
     title: "Aus alten Büchern neue Kladden binden",
     organizor: "Galerie Kama"
   },
   {
-    time: "13:00 - 20:00",
+    time: "13.00 – 20.00 Uhr",
     title: "T-Shirts in Taschen verwandeln",
     organizor: "DIY-Werkstatt"
   },
   {
-    time: "13:15 - 14:15 und 16:45 – 17:45",
+    time: "13.15 – 14.15 Uhr und 16.45 – 17.45 Uhr",
     title: "Nachhaltiges Waschmittel herstellen",
     organizor: "Luna von Grüncool"
   },
   {
-    time: "14:30 - 16:30 und 18:00 - 20:00",
+    time: "14.30 – 16.30 Uhr und 18.00 – 20.00 Uhr",
     title: "T-Shirts im Batik-Look färben",
     organizor: "Neue Botschaft Sued"
   },
   {
-    time: "15:00 - 16:00",
+    time: "15.00 – 16.00 Uhr",
     title: "Ein eigenes Hochbeet einrichten",
     organizor: "SelbstFairSorgt"
   }

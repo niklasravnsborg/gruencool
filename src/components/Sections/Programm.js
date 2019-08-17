@@ -3,61 +3,61 @@ import { Flex, Box, Text, Heading } from '@rebass/emotion';
 
 const items = [
   {
-    time: '13:30',
+    time: '13.30',
     title: 'Bernhard Wessels',
     description: '„Nachhaltige Mobilität“',
     category: 'Vortrag'
   },
   {
-    time: '13:50',
+    time: '13.50',
     title: 'Gaußband',
     description: 'Schülerband aus Braunschweig',
     category: 'Musik'
   },
   {
-    time: '14:50',
+    time: '14.50',
     title: 'Marlene Stamerjohanns',
     description: '„Bäume, Libellen und Leute in Wilhelmshaven“',
     category: 'Poetry Slam'
   },
   {
-    time: '15:10',
+    time: '15.10',
     title: 'Majanko',
     description: 'Poetischer Akustik-Pop aus Wilhelmshaven',
     category: 'Musik'
   },
   {
-    time: '16:10',
+    time: '16.10',
     title: 'Michael Gorski',
     description: '„Warum Veganismus scheiße ist“',
     category: 'Vortrag'
   },
   {
-    time: '16:30',
+    time: '16.30',
     title: 'Studentenwerk',
     description: 'Musikstudenten aus Bremen',
     category: 'Musik'
   },
   {
-    time: '17:10',
+    time: '17.10',
     title: 'deMood aus Jever',
     description: 'Torsten Fellensiek im Gespräch',
     category: 'Gespräch'
   },
   {
-    time: '18:10',
+    time: '18.10',
     title: 'We Don’t Know',
     description: 'Rockband aus Wilhelmshaven',
     category: 'Musik'
   },
   {
-    time: '18:50',
+    time: '18.50',
     title: 'David Onnen',
     description: '„Kritik an Versandhandel und Rassismus“',
     category: 'Poetry Slam'
   },
   {
-    time: '19:30',
+    time: '19.30',
     title: 'Crypsilon',
     description: 'Abgedrehter Singer-Songwriter',
     category: 'Musik'
