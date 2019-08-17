@@ -13,6 +13,11 @@ const items = [
     organizor: "DIY-Werkstatt"
   },
   {
+    time: "13.00 – 20.00 Uhr",
+    title: "Ersatz für Plastikfolien herstellen",
+    organizor: "BUNDjugend"
+  },
+  {
     time: "13.15 – 14.15 Uhr und 16.45 – 17.45 Uhr",
     title: "Nachhaltiges Waschmittel herstellen",
     organizor: "Luna von Grüncool"

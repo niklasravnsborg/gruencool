@@ -26,9 +26,9 @@ export default () => {
     }
   `)
   return (
-    <Flex flexWrap="wrap" mx={-3}>
+    <Flex flexWrap="wrap" mx={-4}>
       {data.partners.edges.map(partner => (
-        <Box width={[1, null, 1/2, 1/3]} mx="auto" p={3} key={partner.node.frontmatter.name}>
+        <Box width={[1, null, 1/2]} mx="auto" p={4} key={partner.node.frontmatter.name}>
           <SectionHeading>{partner.node.frontmatter.name}</SectionHeading>
           <IndentedText>
             <Text
