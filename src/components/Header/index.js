@@ -5,8 +5,8 @@ import { Flex, Box } from '@rebass/emotion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import Container from '../Container'
-import UnderlineLink from '../UnderlineLink'
-import Wordmark from '../../images/logo/wordmark.svg'
+import LogoLight from '../../images/logo/logo_light.svg'
+import LogoDark from '../../images/logo/logo_dark.svg'
 
 const FallbackAnchorLink = ({ href, children, ...props }) => (
   <Location>
@@ -46,18 +46,8 @@ export default ({ floating }) => (
       <Flex justifyContent="space-between" alignItems="center" flexWrap="wrap" mx={-2}>
         <Box px="2">
           <Link to="/">
-            <Wordmark width="128"/>
+            {floating ? <LogoLight width="128"/> : <LogoDark width="128"/>}
           </Link>
-        </Box>
-        <Box px="2">
-          <Flex mx={[-2, -3]} >
-            <UnderlineLink mx={[2, 3]}>
-              <a href="https://goo.gl/maps/AibFeaWfJB7cuAj46" target="_blank" children="Location"/>
-            </UnderlineLink>
-            <UnderlineLink mx={[2, 3]}>
-              <Link to="/programm/" children="Programm"/>
-            </UnderlineLink>
-          </Flex>
         </Box>
       </Flex>
     </Container>

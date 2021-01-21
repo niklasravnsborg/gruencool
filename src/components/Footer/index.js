@@ -19,6 +19,7 @@ export default ({ bg = '#ffe51f' }) => (
   >
     <Container>
       <Flex flexWrap="wrap" justifyContent="space-between" mx="auto" css={{ maxWidth: 450 }}>
+        <Link to="/programm/">Programm 2019</Link> |
         <Link to="/team/">Über uns</Link> |
         <a href="mailto:info@gruen.cool">Kontakt</a> |
         <Link to="/impressum/">Impressum</Link>

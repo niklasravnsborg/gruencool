@@ -56,21 +56,33 @@ const render = data => (
       position: 'relative',
       zIndex: 0
     }}
-    desc="Das grünste Event der Nordseeküste in Wilhelmshaven am 18. August 2019!"
+    desc="Das grünste Event der Nordseeküste!"
   >
     <ThemedSection
-      primary="#ffe51f"
-      accent="#162135"
-      py={184}
-      bgImg={eventBackground}
-      backgroundPosition="center"
+      primary="#162135"
+      accent="white"
+      py={5}
+      css={{
+        display: 'flex',
+        alignItems: 'center',
+        minHeight: '90vh'
+      }}
     >
       <Container>
         <SectionHeading as="h1" fontSize="5" mb="2">
-          Das grünste Event der Nordseeküste
+          Grüncool geht in die nächste Runde
         </SectionHeading>
-        <Text as="p" mb="3" color="accent"><Nobreak>Am <b>18. August 2019 ab 13:00</b> im <b>Strandcafé Fährhaus</b></Nobreak></Text>
-        <Button href="https://www.facebook.com/events/2409460576001254/" target="_blank" as="a" variant="outline">Zum Facebook-Event</Button>
+        <Text as="p" mb="3" css={{ hyphens: 'none' }}>
+          2019 haben wir mit vielen tollen Menschen das „grünste Event der Nordseeküste“ veranstaltet.
+          Nun laufen unsere Planungen für das nächste Event und wir suchen neue Teammitglieder, Partner,
+          Künstler, Redner und natürlich Interessierte. Unten erfährst Du noch mehr über unser Event
+          von 2019.
+        </Text>
+        <Box m={-2}>
+          <Button css={{ color: 'white', boxShadow: 'inset 0 0 0 2px white' }} m={2} as="a" variant="outline" target="_blank" href="https://www.facebook.com/gruencool.event/">Facebook</Button>
+          <Button css={{ color: 'white', boxShadow: 'inset 0 0 0 2px white' }} m={2} as="a" variant="outline" target="_blank" href="https://www.instagram.com/gruencoolwhv/">Instagram</Button>
+          <Button css={{ color: 'white', boxShadow: 'inset 0 0 0 2px white' }} m={2} as="a" variant="outline" target="_blank" href="mailto:info@gruen.cool">E-Mail</Button>
+        </Box>
       </Container>
     </ThemedSection>
     <ThemedSection
