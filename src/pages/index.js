@@ -73,10 +73,7 @@ const render = data => (
           Grüncool geht in die nächste Runde
         </SectionHeading>
         <Text as="p" mb="3" css={{ hyphens: 'none' }}>
-          2019 haben wir mit vielen tollen Menschen das „grünste Event der Nordseeküste“ veranstaltet.
-          Nun laufen unsere Planungen für das nächste Event und wir suchen neue Teammitglieder, Partner,
-          Künstler, Redner und natürlich Interessierte. Unten erfährst Du noch mehr über unser Event
-          von 2019.
+          2019 haben wir mit vielen tollen Menschen das „grünste Event der Nordseeküste“ veranstaltet. Nun laufen unsere Planungen für <b>Grüncool 2021</b> und wir suchen neue Teammitglieder, Partner:innen, Künstler:innen, Redner:innen und natürlich Interessierte. Kontaktiert uns gerne, wenn ihr dabei sein und uns unterstützen wollt!
         </Text>
         <Box m={-2}>
           <Button css={{ color: 'white', boxShadow: 'inset 0 0 0 2px white' }} m={2} as="a" variant="outline" target="_blank" href="https://www.facebook.com/gruencool.event/">Facebook</Button>

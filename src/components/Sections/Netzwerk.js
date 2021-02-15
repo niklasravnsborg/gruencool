@@ -180,7 +180,7 @@ const Partners = _ => (
 export default _ => (
   <>
     <Box mt={4} mb={4}>
-      <Text textAlign="center" mb="2">Das Grüncool 2019 wird veranstaltet von:</Text>
+      <Text textAlign="center" mb="2">Das Grüncool 2019 wurde veranstaltet von:</Text>
       <Box mx="auto" px={20} css={{ maxWidth: 460 }}>
         <a href="https://neue-botschaft-sued.de/" target="_blank">
           <Image src={neuebotschaftsued} alt="Neue Botschaft Sued"/>
