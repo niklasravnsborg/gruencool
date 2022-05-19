@@ -11,17 +11,22 @@ export default ({ bg = '#ffe51f' }) => (
     px={3}
     bg={bg}
     css={theme => ({
-      'a': {
+      a: {
         color: 'inherit',
-        borderBottom: `1px solid ${theme.colors.dark}`
-      }
+        borderBottom: `1px solid ${theme.colors.dark}`,
+      },
     })}
   >
     <Container>
-      <Flex flexWrap="wrap" justifyContent="space-between" mx="auto" css={{ maxWidth: 450 }}>
-        <Link to="/programm/">Programm 2019</Link> |
-        <Link to="/team/">Über uns</Link> |
-        <a href="mailto:info@gruen.cool">Kontakt</a> |
+      <Flex
+        flexWrap="wrap"
+        justifyContent="space-between"
+        mx="auto"
+        css={{ maxWidth: 450 }}
+      >
+        <a href="https://www.facebook.com/gruencool.event/">Facebook</a> |
+        <a href="https://www.instagram.com/gruencoolwhv/">Instagram</a> |
+        <a href="mailto:info@gruen.cool">E-Mail</a> |
         <Link to="/impressum/">Impressum</Link>
       </Flex>
     </Container>

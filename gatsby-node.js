@@ -19,7 +19,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       node,
       name: 'slug',
-      value: slug
+      value: slug,
     })
   }
 }
@@ -28,24 +28,25 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions
 
   const redirects = [
-    { f: '/partner/', t: '/programm/' },
+    { f: '/partner/', t: 'https://2019.gruen.cool/programm/' },
+    { f: '/programm/', t: 'https://2019.gruen.cool/programm/' },
+    { f: '/team/', t: 'https://2019.gruen.cool/team/' },
   ]
 
-  redirects.forEach(({ f, t }) => createRedirect({
-    fromPath: f,
-    toPath: t,
-    isPermanent: true
-  }))
+  redirects.forEach(({ f, t }) =>
+    createRedirect({
+      fromPath: f,
+      toPath: t,
+      isPermanent: true,
+    })
+  )
 
   return new Promise((resolve, reject) => {
     const pageTemplate = path.resolve('./src/templates/page.js')
 
     graphql(`
       {
-        allMarkdownRemark(
-          limit: 1000,
-          filter: { frontmatter: { } },
-        ) {
+        allMarkdownRemark(limit: 1000, filter: { frontmatter: {} }) {
           edges {
             node {
               fields {
@@ -69,7 +70,7 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path: edge.node.fields.slug,
             component: pageTemplate,
-            context: { slug: edge.node.fields.slug }
+            context: { slug: edge.node.fields.slug },
           })
         }
       })
