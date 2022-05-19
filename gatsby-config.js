@@ -3,51 +3,50 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
-    `gatsby-plugin-netlify-cache`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images`,
-        name: `images`
-      }
+        name: `images`,
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages'
-      }
+        name: 'pages',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/persons`,
-        name: 'persons'
-      }
+        name: 'persons',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/staende`,
-        name: 'staende'
-      }
+        name: 'staende',
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
-        defaultQuality: 80
-      }
+        defaultQuality: 80,
+      },
     },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
-      }
+      },
     },
     {
-      resolve: `gatsby-plugin-react-svg`
+      resolve: `gatsby-plugin-react-svg`,
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -58,9 +57,9 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/icon.png`
+        icon: `src/icon.png`,
       },
     },
-    `gatsby-plugin-remove-serviceworker`
-  ]
+    `gatsby-plugin-remove-serviceworker`,
+  ],
 }
