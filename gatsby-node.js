@@ -28,9 +28,9 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions
 
   const redirects = [
-    { f: '/partner/', t: 'https://2019.gruen.cool/programm/' },
-    { f: '/programm/', t: 'https://2019.gruen.cool/programm/' },
-    { f: '/team/', t: 'https://2019.gruen.cool/team/' },
+    { f: '/partner/', t: 'https://gruencool2019.netlify.app/programm/' },
+    { f: '/programm/', t: 'https://gruencool2019.netlify.app/programm/' },
+    { f: '/team/', t: 'https://gruencool2019.netlify.app/team/' },
   ]
 
   redirects.forEach(({ f, t }) =>

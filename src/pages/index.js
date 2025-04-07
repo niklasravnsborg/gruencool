@@ -66,7 +66,7 @@ const render = data => (
             as="a"
             variant="outline"
             target="_blank"
-            href="https://2019.gruen.cool"
+            href="https://gruencool2019.netlify.app/"
           >
             Grüncool 2019 Website
           </Button>
